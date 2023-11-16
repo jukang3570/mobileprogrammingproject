@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="10dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:scaleType="fitXY" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavi"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="#F3F3F3"
+            app:itemIconTint="@color/selector"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/btm_navi_menu" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
+

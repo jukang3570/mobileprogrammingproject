@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/outline_home_24"
+        android:title="메인"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/umbrella"
+        android:enabled="true"
+        android:icon="@drawable/baseline_umbrella_24"
+        android:title="공유우산"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/rest"
+        android:enabled="true"
+        android:icon="@drawable/outline_wind_power_24"
+        android:title="무더위쉼터"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/comu"
+        android:enabled="true"
+        android:icon="@drawable/outline_groups_24"
+        android:title="커뮤니티"
+        app:showAsAction="always"/>
+
+
+
+
+</menu>
