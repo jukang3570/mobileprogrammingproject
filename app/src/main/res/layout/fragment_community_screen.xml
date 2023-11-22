@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/fragment_community_screen.xml -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/community_screen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CommunityScreenFragment">
@@ -11,32 +13,52 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:focusable="true"
+            android:layout_margin="10dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="검색어를 입력하시오"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <Spinner
-                android:id="@+id/category"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView"
-                android:layout_marginTop="16dp"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="16dp"
-                />
+            android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/button"
+            <Spinner
+                android:id="@+id/local_category"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button" />
+                android:layout_margin="10dp" />
+
+            <Spinner
+                android:id="@+id/theme_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+
+
         </LinearLayout>
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+
+            android:layout_margin="10dp"
+            tools:listitem="@layout/post_item" />
+
+        <Button
+            android:id="@+id/WriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:layout_gravity="right"
+            android:text="+ 글쓰기" />
     </LinearLayout>
+
 </FrameLayout>
