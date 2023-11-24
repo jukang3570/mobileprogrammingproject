@@ -45,11 +45,11 @@ import java.util.Arrays;
 public class WriteFragment extends Fragment {
 
 
-
     private Spinner localSpinner;
     private Spinner themeSpinner;
     private ArrayList<String> localList;
     private ArrayList<String> themeList;
+    private ArrayAdapter<Object> postAdapter;
     private ArrayAdapter<String> localAdapter;
     private ArrayAdapter<String> themeAdapter;
     private static final int REQUEST_IMAGE_CAPTURE = 1;
@@ -72,11 +72,10 @@ public class WriteFragment extends Fragment {
     private String mParam2;
 
 
-
-
     public WriteFragment() {
         // Required empty public constructor
     }
+
 
     public static WriteFragment newInstance(String param1, String param2) {
         WriteFragment fragment = new WriteFragment();
@@ -103,9 +102,8 @@ public class WriteFragment extends Fragment {
 
         themeAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_spinner_item, themeList);
         themeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        postAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_list_item_1);
     }
-
-
 
 
     @Override
@@ -114,9 +112,9 @@ public class WriteFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_write, container, false);
         bCamera = view.findViewById(R.id.CameraButton);
         bCancel = view.findViewById(R.id.cancelButton);
-        bSubmit=view.findViewById(R.id.registerButton);
+        bSubmit = view.findViewById(R.id.registerButton);
         contentEditText = view.findViewById(R.id.contentEditText);
-        titleEditText=view.findViewById(R.id.titleText);
+        titleEditText = view.findViewById(R.id.titleText);
         imageView = new ImageView(getActivity());
 
         // Spinner 참조 얻기
@@ -128,15 +126,12 @@ public class WriteFragment extends Fragment {
         themeSpinner.setAdapter(themeAdapter);
 
 
-
-
-
         bCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction transaction=getActivity().getSupportFragmentManager().beginTransaction();
-                CommunityScreenFragment communityscreenFragment= new CommunityScreenFragment();
-                transaction.replace(R.id.container,communityscreenFragment);
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                CommunityScreenFragment communityscreenFragment = new CommunityScreenFragment();
+                transaction.replace(R.id.container, communityscreenFragment);
                 transaction.commit();
 
             }
@@ -163,92 +158,26 @@ public class WriteFragment extends Fragment {
         bSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        String title = titleEditText.getText().toString();
-                        String content = contentEditText.getText().toString();
-                        String localCategory = localSpinner.getSelectedItem().toString();
-                        String themeCategory = themeSpinner.getSelectedItem().toString();
-                        String imageData = convertImageToBase64();
+                // 기타 필요한 데이터 수집
+                String title = titleEditText.getText().toString();
+                String content = contentEditText.getText().toString();
+                String localCategory = localSpinner.getSelectedItem().toString();
+                String themeCategory = themeSpinner.getSelectedItem().toString();
+                String imageData = convertImageToBase64(); // 이미지 데이터를 Base64 문자열로 변환
 
-                        User user = new User(title, content, localCategory, themeCategory, imageData);
-                        ArrayList<User> users = new ArrayList<>();
-                        users.add(user);
-                        Query query = new Query("add", users);
-                        send(query);
-                        Log.d("WriteFragment", "데이터베이스에 데이터 저장 성공");
+                // DBHelper를 통해 데이터베이스에 새 게시글 삽입
+                DBHelper dbHelper = new DBHelper(requireContext());
+                dbHelper.insertPost(title, content, localCategory, themeCategory, imageData);
 
-                        // bSubmit을 클릭하면 CommunityFragment로 이동
-                        getActivity().runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                // 이동할 Fragment 객체 생성
-                                CommunityScreenFragment communityScreenFragment = new CommunityScreenFragment();
-
-                                // FragmentTransaction을 사용하여 Fragment 교체
-                                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                                transaction.replace(R.id.container, communityScreenFragment);
-                                transaction.commit();
-                            }
-                        });
-                    }
-                }).start();
+                // FragmentTransaction을 사용하여 Fragment 교체
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                CommunityScreenFragment communityScreenFragment = new CommunityScreenFragment();
+                transaction.replace(R.id.container, communityScreenFragment);
+                transaction.commit();
             }
         });
         return view;
 
-    }
-    public void send(Query query) {
-        int portNumber =5000;
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Socket sock = new Socket("10.0.2.2", portNumber);
-                    ObjectOutputStream outStream = new ObjectOutputStream(sock.getOutputStream());
-                    outStream.writeObject(query);
-                    outStream.flush();
-
-                    ObjectInputStream inStream = new ObjectInputStream(sock.getInputStream());
-
-                    getActivity().runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            Intent intent = new Intent(getContext(), CommunityFragment.class);
-                            try {
-                                if (query.header.equals("add")) {
-                                    String responseStr = "" + inStream.readObject();
-                                    intent.putExtra("STRING", responseStr);
-                                    startActivity(intent);
-                                } else if (query.header.equals("checkAll")) {
-                                    Query responseQuery = (Query) inStream.readObject();
-                                    ArrayList<User> users = responseQuery.users;
-                                    intent.putExtra("user", users);
-                                    startActivity(intent);
-                                }
-                            } catch (IOException | ClassNotFoundException e) {
-                                e.printStackTrace();
-                                // 데이터베이스 작업 중 예외 발생
-                                Log.e("WriteFragment", "데이터베이스 작업 중 오류 발생: " + e.getMessage());
-                            } finally {
-                                try {
-                                    sock.close();
-                                } catch (IOException e) {
-                                    e.printStackTrace();
-                                    Log.e("WriteFragment", "소켓 닫기 중 오류 발생: " + e.getMessage());
-                                }
-                            }
-                        }
-                    });
-                } catch (IOException e) {
-                    e.printStackTrace();
-                    // 소켓 연결 오류
-                    Log.e("WriteFragment", "소켓 연결 중 오류 발생: " + e.getMessage());
-                }
-            }
-        }).start();
     }
 
 

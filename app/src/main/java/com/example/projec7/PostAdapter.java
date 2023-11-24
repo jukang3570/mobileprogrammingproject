@@ -18,11 +18,12 @@ import java.util.List;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
 
-    private ArrayList<Post> postList;
+    ArrayList<Post> postList;
 
-    public PostAdapter(ArrayList<Post> postList) {
-        this.postList = postList;
+    public PostAdapter(List<Post> postList) {
+        this.postList = new ArrayList<>(postList); // 여기서 변경
     }
+
 
     @NonNull
     @Override

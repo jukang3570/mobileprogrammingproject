@@ -2,6 +2,8 @@ package com.example.projec7;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -28,6 +30,10 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.projec7.Post;
+import com.example.projec7.PostAdapter;
+import com.example.projec7.WriteFragment;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -47,7 +53,7 @@ import java.util.Scanner;
  * Use the {@link CommunityScreenFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CommunityScreenFragment extends Fragment {
+public class CommunityScreenFragment extends Fragment  {
 
 
     private static final String ARG_PARAM1 = "param1";
@@ -65,7 +71,6 @@ public class CommunityScreenFragment extends Fragment {
     private ArrayAdapter<String> localAdapter;
     private ArrayAdapter<String> themeAdapter;
     private ArrayList<Post> postList = new ArrayList<>();
-
 
 
     public CommunityScreenFragment() {
@@ -98,37 +103,16 @@ public class CommunityScreenFragment extends Fragment {
 
 
 
-        getParentFragmentManager().setFragmentResultListener("writeKey", this, new FragmentResultListener() {
-            @Override
-            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
-                // WriteFragment에서 전달된 결과를 받아서 처리
-                String title = result.getString("title", "");
-                String content = result.getString("content", "");
-                String localCategory = result.getString("localCategory", "");
-                String themeCategory = result.getString("themeCategory", "");
-                String imageData = result.getString("imageData", "");
 
-                // 새로운 게시글 생성
-                Post newPost = new Post(title, content, localCategory, themeCategory, imageData);
-
-                // 리스트에 추가
-                postList.add(0, newPost);
-
-                // 어댑터에 변경사항 알림
-                postAdapter.notifyItemInserted(0);
-
-                // 스크롤 이동
-                recyclerView.scrollToPosition(0);
-            }
-        });
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_community_screen, container, false);
-        localSpinner =  rootView.findViewById(R.id.local_category);
-        themeSpinner =  rootView.findViewById(R.id.theme_category);
+        localSpinner = rootView.findViewById(R.id.local_category);
+        themeSpinner = rootView.findViewById(R.id.theme_category);
 
         // Spinner에 어댑터 설정
         localSpinner.setAdapter(localAdapter);
@@ -140,10 +124,17 @@ public class CommunityScreenFragment extends Fragment {
         recyclerView = rootView.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(requireContext())); // 레이아웃 매니저 설정
 
-        // PostAdapter 생성 시 postList를 전달
+        DBHelper dbHelper = new DBHelper(requireContext());
+
+
+
+        // Update the RecyclerView with the loaded posts
         postAdapter = new PostAdapter(postList);
         recyclerView.setAdapter(postAdapter);
 
+// Load posts from the database
+        ArrayList<Post> postArrayList = new ArrayList<>(); // 어떻게 리스트를 초기화했는지에 따라 코드가 달라집니다.
+        postAdapter = new PostAdapter(postArrayList);
         // WriteButton 클릭 이벤트 설정
         bWrite.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -156,63 +147,19 @@ public class CommunityScreenFragment extends Fragment {
                 requireActivity().getSupportFragmentManager().executePendingTransactions();
             }
         });
-        loadPostsFromDatabase();
-
 
         return rootView;
     }
-    private void loadPostsFromDatabase() {
-        List<Post> databasePosts = getPostsFromDatabase();
-        postList.addAll(databasePosts);
-        postAdapter.notifyDataSetChanged();
-    }
-    private List<Post> getPostsFromDatabase() {
-        List<Post> postList = new ArrayList<>();
 
-        try {
-            // 서버에서 데이터를 가져오는 로직
-            String serverUrl = "http://your-server-url/data-api"; // 실제 서버 URL로 변경
-            URL url = new URL(serverUrl);
-            HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
 
-            try {
-                InputStream in = new BufferedInputStream(urlConnection.getInputStream());
-                String response = convertStreamToString(in);
 
-                // JSON 파싱
-                JSONArray jsonArray = new JSONArray(response);
 
-                for (int i = 0; i < jsonArray.length(); i++) {
-                    JSONObject jsonPost = jsonArray.getJSONObject(i);
 
-                    // Post 객체로 변환
-                    String title = jsonPost.getString("title");
-                    String content = jsonPost.getString("content");
-                    String localCategory=jsonPost.getString("localCategory");
-                    String themeCategory=jsonPost.getString("themeCategory");
-                    String imageData=jsonPost.getString("imageData");
-
-                    Post post = new Post(title, content,localCategory,themeCategory,imageData);
-                    postList.add(post);
-                }
-
-            } finally {
-                urlConnection.disconnect();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return postList;
-    }
 
     private String convertStreamToString(InputStream is) {
         Scanner scanner = new Scanner(is).useDelimiter("\\A");
         return scanner.hasNext() ? scanner.next() : "";
     }
-
-
-
 
 
     // Base64 문자열을 Bitmap으로 변환하는 메서드
@@ -223,8 +170,4 @@ public class CommunityScreenFragment extends Fragment {
         return BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
 
     }
-
-
-
-
 }
