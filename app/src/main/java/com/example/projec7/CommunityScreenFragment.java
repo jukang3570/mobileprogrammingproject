@@ -70,7 +70,8 @@ public class CommunityScreenFragment extends Fragment  {
     private ArrayList<String> themeList;
     private ArrayAdapter<String> localAdapter;
     private ArrayAdapter<String> themeAdapter;
-    private ArrayList<Post> postList = new ArrayList<>();
+    private List<Post> postList;
+    private PostAdapter adapter;
 
 
     public CommunityScreenFragment() {
@@ -123,18 +124,11 @@ public class CommunityScreenFragment extends Fragment  {
         // RecyclerView 초기화 및 레이아웃 매니저 설정
         recyclerView = rootView.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(requireContext())); // 레이아웃 매니저 설정
-
-        DBHelper dbHelper = new DBHelper(requireContext());
-
+        recyclerView.setAdapter(adapter);
 
 
-        // Update the RecyclerView with the loaded posts
-        postAdapter = new PostAdapter(postList);
-        recyclerView.setAdapter(postAdapter);
 
-// Load posts from the database
-        ArrayList<Post> postArrayList = new ArrayList<>(); // 어떻게 리스트를 초기화했는지에 따라 코드가 달라집니다.
-        postAdapter = new PostAdapter(postArrayList);
+
         // WriteButton 클릭 이벤트 설정
         bWrite.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -147,6 +141,11 @@ public class CommunityScreenFragment extends Fragment  {
                 requireActivity().getSupportFragmentManager().executePendingTransactions();
             }
         });
+        // DBHelper에서 데이터 가져오기
+        DBHelper dbHelper = new DBHelper(getActivity());
+        postList.addAll(dbHelper.getAllPosts());
+        adapter.notifyDataSetChanged();
+
 
         return rootView;
     }

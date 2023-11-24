@@ -16,6 +16,15 @@ public class Post {
         this.themeCategory = themeCategory;
         this.imageData = imageData;
     }
+    public Post(){};
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
 
     // Getters and setters
     public String getTitle() {

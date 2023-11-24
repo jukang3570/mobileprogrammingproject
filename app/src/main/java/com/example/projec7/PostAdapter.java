@@ -18,17 +18,13 @@ import java.util.List;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
 
-    ArrayList<Post> postList;
-
-    public PostAdapter(List<Post> postList) {
-        this.postList = new ArrayList<>(postList); // 여기서 변경
-    }
-
-
+    ArrayList<Post> postList=new ArrayList<Post>();
     @NonNull
     @Override
     public PostViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.post_item, parent, false);
+        LayoutInflater inflater=LayoutInflater.from(parent.getContext());
+        View view = inflater.inflate(R.layout.post_item, parent, false);
+
         return new PostViewHolder(view);
     }
 
@@ -37,6 +33,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         Post post = postList.get(position);
         holder.titleTextView.setText(post.getTitle());
         holder.contentTextView.setText(post.getContent());
+        holder.localTextView.setText(post.getLocalCategory());
+        holder.themeTextView.setText(post.getThemeCategory());
+
 
 
 

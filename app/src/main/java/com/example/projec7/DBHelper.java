@@ -20,10 +20,11 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 1;
 
     public DBHelper(@Nullable Context context) {
-        super(context, "database", null, DATABASE_VERSION);
+        super(context, "post.db", null, DATABASE_VERSION);
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
+        println("onCreate 호출됨");
         String postSQL = "create table post_db (" +
                 "_id integer primary key autoincrement," +
                 "title," +
@@ -34,29 +35,70 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL(postSQL);
 
     }
+    public void onOpen(SQLiteDatabase db){
+        println("onOpen 호출됨");
+    }
 
-    public void insertPost(String title, String content, String localCategory, String themeCategory, String imageData) {
+    public void println(String data){
+        Log.d("DatabaseHelper" , data);
+    }
+    public long insertPost(String title, String content, String localCategory, String themeCategory, String imageData) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put("title", title);
-        values.put("content", content);
-        values.put("local_category", localCategory);
-        values.put("theme_category", themeCategory);
-        values.put("image_data", imageData);
+        values.put(title, title);
+        values.put(content, content);
+        values.put(localCategory, localCategory);
+        values.put(themeCategory, themeCategory);
+        values.put(imageData, imageData);
+        String tableName="post_db";
 
-        long newRowId = db.insert("post_db", null, values);
+        long newRowId = db.insert(tableName, null, values);
+        db.close();
+        return newRowId;
+    }
+    public List<Post> getAllPosts() {
+        List<Post> postList = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
 
-        // Check if the insertion was successful
-        if (newRowId != -1) {
-            // Log the ID of the newly inserted row
-            Log.d("DBHelper", "New row ID: " + newRowId);
-        } else {
-            // Log an error if the insertion failed
-            Log.e("DBHelper", "Error inserting row");
+        String[] projection = {
+
+                "title",
+                "content",
+                "local_category" ,
+                        "theme_category" ,
+                        "image_data"
+
+        };
+
+        Cursor cursor = db.query(
+                "post_db",
+                projection,
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
+        while (cursor.moveToNext()) {
+            Post post = new Post();
+
+
+            post.setTitle(cursor.getString(cursor.getColumnIndexOrThrow("title")));
+            post.setContent(cursor.getString(cursor.getColumnIndexOrThrow("content")));
+            post.setLocalCategory(cursor.getString(cursor.getColumnIndexOrThrow("local_category" )));
+            post.setThemeCategory(cursor.getString(cursor.getColumnIndexOrThrow("theme_category" )));
+            post.setImageData(cursor.getString(cursor.getColumnIndexOrThrow( "image_data")));
+
+            postList.add(post);
         }
 
+        cursor.close();
+        db.close();
 
+        return postList;
     }
+
 
 
 
@@ -71,33 +113,12 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        if (oldVersion < 2) {
-            String updateQuery = "ALTER TABLE tb_post ADD COLUMN local_category TEXT";
+        println("onUpgrade 호출됨 : " +oldVersion+" -> "+ newVersion);
+        if (oldVersion>1) {
+            String updateQuery = "DROP TABLE IF EXISTS "+"post_db";
             db.execSQL(updateQuery);
         }
     }
-    public List<Post> getAllPosts() {
-        List<Post> posts = new ArrayList<>();
 
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.query("post_db", null, null, null, null, null, null);
-
-        if (cursor != null && cursor.moveToFirst()) {
-            do {
-
-                String title = cursor.getString(cursor.getColumnIndex("title"));
-                String content = cursor.getString(cursor.getColumnIndex("content"));
-                String localCategory = cursor.getString(cursor.getColumnIndex("local_category"));
-                String themeCategory = cursor.getString(cursor.getColumnIndex("theme_category"));
-                String imageData = cursor.getString(cursor.getColumnIndex("image_data"));
-
-                posts.add(new Post(title, content, localCategory, themeCategory, imageData));
-            } while (cursor.moveToNext());
-
-            cursor.close();
-        }
-
-        return posts;
-    }
 
 }
