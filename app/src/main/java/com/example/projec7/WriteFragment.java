@@ -38,6 +38,7 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -72,6 +73,8 @@ public class WriteFragment extends Fragment {
     private boolean dataAddedSuccessfully = false;
     private String mParam1;
     private String mParam2;
+    private List<Post> postList;
+
 
 
     public WriteFragment() {
@@ -166,12 +169,16 @@ public class WriteFragment extends Fragment {
                 String localCategory = localSpinner.getSelectedItem().toString();
                 String themeCategory = themeSpinner.getSelectedItem().toString();
                 String imageData = convertImageToBase64(); // 이미지 데이터를 Base64 문자열로 변환
-                Post post=new Post(title,content,localCategory,themeCategory,imageData);
+
                 DBHelper dbHelper = new DBHelper(getContext());
                 long newRowId = dbHelper.insertPost(title, content, localCategory, themeCategory, imageData);
 
                 // newRowId를 사용하여 성공적으로 저장되었는지 확인할 수 있음
                 if (newRowId != -1) {
+
+                    requireActivity().getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.container, new CommunityScreenFragment())
+                            .commit();
                     println("저장 성공");
                 } else {
                     println("저장 실패");

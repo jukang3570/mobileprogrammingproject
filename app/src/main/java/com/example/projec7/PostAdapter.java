@@ -18,7 +18,13 @@ import java.util.List;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
 
-    ArrayList<Post> postList=new ArrayList<Post>();
+    private List<Post> postList;
+    private Context context;
+    public PostAdapter(Context context, List<Post> postList) {
+        this.context = context;
+        this.postList = postList;
+    }
+
     @NonNull
     @Override
     public PostViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

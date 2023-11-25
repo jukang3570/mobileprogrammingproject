@@ -45,15 +45,15 @@ public class DBHelper extends SQLiteOpenHelper {
     public long insertPost(String title, String content, String localCategory, String themeCategory, String imageData) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(title, title);
-        values.put(content, content);
-        values.put(localCategory, localCategory);
-        values.put(themeCategory, themeCategory);
-        values.put(imageData, imageData);
+        values.put("title", title);
+        values.put("content", content);
+        values.put("local_category", localCategory);
+        values.put("theme_category", themeCategory);
+        values.put("image_data", imageData);
         String tableName="post_db";
 
         long newRowId = db.insert(tableName, null, values);
-        db.close();
+
         return newRowId;
     }
     public List<Post> getAllPosts() {
@@ -61,13 +61,12 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         String[] projection = {
-
+                "_id",
                 "title",
                 "content",
-                "local_category" ,
-                        "theme_category" ,
-                        "image_data"
-
+                "local_category",
+                "theme_category",
+                "image_data"
         };
 
         Cursor cursor = db.query(
