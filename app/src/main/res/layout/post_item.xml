@@ -4,24 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+    >
 
     <!-- Title -->
     <TextView
         android:id="@+id/postTitleTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="8dp"/>
 
-    <!-- Content -->
-    <TextView
-        android:id="@+id/postContentTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:layout_marginBottom="8dp"/>
+
+
 
     <!-- Local and Theme Categories -->
     <LinearLayout
@@ -34,6 +31,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+
             android:layout_weight="1"
             android:textSize="14sp" />
 
@@ -44,6 +43,7 @@
             android:layout_weight="1"
             android:layout_marginLeft="8dp"
             android:layout_marginBottom="8dp"
+            android:textSize="14sp"
              />
     </LinearLayout>
 
@@ -51,8 +51,28 @@
     <ImageView
         android:id="@+id/postImageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginBottom="8dp"
         android:scaleType="centerCrop"/>
+
+
+    <ImageButton
+        android:id="@+id/CommentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@android:drawable/btn_star" />
+    <TextView
+        android:id="@+id/postContentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
 
 </LinearLayout>

@@ -48,6 +48,21 @@ import java.util.List;
 public class WriteFragment extends Fragment {
 
 
+
+
+    // TODO: Rename parameter arguments, choose names that match
+    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+
+    // TODO: Rename and change types of parameters
+
+    //필요한 컴포넌트들 선언
+    private Button bCancel;
+    private ImageButton bCamera;
+    private Button bSubmit;
+    private EditText contentEditText;
+    private EditText titleEditText;
     private Spinner localSpinner;
     private Spinner themeSpinner;
     private ArrayList<String> localList;
@@ -58,22 +73,9 @@ public class WriteFragment extends Fragment {
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private static final int REQUEST_GALLERY_IMAGE = 2;
     private ImageView imageView;
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private Button bCancel;
-    private ImageButton bCamera;
-    private Button bSubmit;
-    private EditText contentEditText;
-    private EditText titleEditText;
-    private boolean dataAddedSuccessfully = false;
     private String mParam1;
     private String mParam2;
-    private List<Post> postList;
+
 
 
 
@@ -107,6 +109,7 @@ public class WriteFragment extends Fragment {
 
         themeAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_spinner_item, themeList);
         themeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
         postAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_list_item_1);
     }
 
@@ -159,7 +162,6 @@ public class WriteFragment extends Fragment {
         });
 
         //등록 버튼을 누르면 게시글이 데이터베이스에 추가되도록 설정
-
         bSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -170,12 +172,14 @@ public class WriteFragment extends Fragment {
                 String themeCategory = themeSpinner.getSelectedItem().toString();
                 String imageData = convertImageToBase64(); // 이미지 데이터를 Base64 문자열로 변환
 
+
+
                 DBHelper dbHelper = new DBHelper(getContext());
                 long newRowId = dbHelper.insertPost(title, content, localCategory, themeCategory, imageData);
 
                 // newRowId를 사용하여 성공적으로 저장되었는지 확인할 수 있음
                 if (newRowId != -1) {
-
+                    //데이터 베이스 저장에 성공하면 fragment전환
                     requireActivity().getSupportFragmentManager().beginTransaction()
                             .replace(R.id.container, new CommunityScreenFragment())
                             .commit();

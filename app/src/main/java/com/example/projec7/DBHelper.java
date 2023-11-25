@@ -21,6 +21,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public DBHelper(@Nullable Context context) {
         super(context, "post.db", null, DATABASE_VERSION);
+
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -31,8 +32,9 @@ public class DBHelper extends SQLiteOpenHelper {
                 "content," +
                 "local_category," +
                 "theme_category," +
-                "image_data)";
+                "image_data,"+"comment)";
         db.execSQL(postSQL);
+
 
     }
     public void onOpen(SQLiteDatabase db){
@@ -97,6 +99,15 @@ public class DBHelper extends SQLiteOpenHelper {
 
         return postList;
     }
+    public void addCommentForPost(int postId,String commentText){
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues values=new ContentValues();
+        values.put("_id",postId);
+        values.put("comment",commentText);
+        db.insert("post_db",null,values);
+        db.close();
+    }
+
 
 
 

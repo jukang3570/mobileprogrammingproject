@@ -3,14 +3,20 @@ package com.example.projec7;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Bundle;
 import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -20,16 +26,20 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
 
     private List<Post> postList;
     private Context context;
+
     public PostAdapter(Context context, List<Post> postList) {
         this.context = context;
         this.postList = postList;
     }
+
 
     @NonNull
     @Override
     public PostViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater=LayoutInflater.from(parent.getContext());
         View view = inflater.inflate(R.layout.post_item, parent, false);
+
+
 
         return new PostViewHolder(view);
     }
@@ -41,10 +51,18 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         holder.contentTextView.setText(post.getContent());
         holder.localTextView.setText(post.getLocalCategory());
         holder.themeTextView.setText(post.getThemeCategory());
+        holder.CommentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PostDetailFragment commentFragment = new PostDetailFragment();
+                Bundle bundle = new Bundle();
+               // bundle.putString("postId", post.getId()); // 댓글을 작성할 포스트의 ID 또는 다른 필요한 데이터 추가
+                commentFragment.setArguments(bundle);
 
-
-
-
+                // CommentFragment를 다이얼로그로 표시
+                commentFragment.show(((AppCompatActivity) context).getSupportFragmentManager(), "comment_dialog");
+            }
+        });
         // 이미지를 표시하는 부분
         String imageData = post.getImageData();
         if (imageData != null && !imageData.isEmpty()) {
@@ -67,6 +85,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         TextView localTextView;
         TextView themeTextView;
         ImageView imageView;
+        ImageButton CommentButton;
 
         public PostViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -75,6 +94,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
             localTextView=itemView.findViewById(R.id.postLocalCategoryTextView);
             themeTextView=itemView.findViewById(R.id.postThemeCategoryTextView);
             imageView = itemView.findViewById(R.id.postImageView);
+            CommentButton= itemView.findViewById(R.id.CommentButton);
         }
     }
 

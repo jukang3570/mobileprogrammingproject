@@ -92,6 +92,11 @@ public class CommunityScreenFragment extends Fragment  {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         localList = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.local_array)));
         themeList = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.theme_array)));
 
@@ -101,15 +106,6 @@ public class CommunityScreenFragment extends Fragment  {
 
         themeAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_spinner_item, themeList);
         themeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-
-
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_community_screen, container, false);
         localSpinner = rootView.findViewById(R.id.local_category);
