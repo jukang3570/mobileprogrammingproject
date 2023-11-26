@@ -46,18 +46,20 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="390dp"
             android:layout_margin="10dp"
             tools:listitem="@layout/post_item" />
 
-        <Button
+
+
+        <ImageButton
             android:id="@+id/WriteButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="18dp"
             android:layout_gravity="right"
-            android:text="+ 글쓰기" />
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/btn_star" />
     </LinearLayout>
 
 </FrameLayout>

@@ -9,7 +9,9 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -62,8 +64,7 @@ public class CommunityScreenFragment extends Fragment  {
     // TODO: Rename and change types of parameters
 
     private RecyclerView recyclerView;
-    private PostAdapter postAdapter;
-    Button bWrite;
+    ImageButton bWrite;
     private Spinner localSpinner;
     private Spinner themeSpinner;
     private ArrayList<String> localList;
@@ -121,15 +122,44 @@ public class CommunityScreenFragment extends Fragment  {
         recyclerView = rootView.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
 
-// DBHelper에서 데이터 가져오기
+        // DBHelper에서 데이터 가져오기
         DBHelper dbHelper = new DBHelper(getActivity());
 
-// PostAdapter 객체 초기화 및 데이터 설정
+        // PostAdapter 객체 초기화 및 데이터 설정
         postList = new ArrayList<>(); // postList 초기화
         postList.addAll(dbHelper.getAllPosts());
         adapter = new PostAdapter(getActivity(), postList);
         recyclerView.setAdapter(adapter);
-        adapter.notifyDataSetChanged();;
+        adapter.notifyDataSetChanged();
+
+
+        localSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+                // 선택된 지역에 따라 postList 필터링
+                filterPosts(localList.get(position), themeSpinner.getSelectedItem().toString());
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+                // 아무것도 선택되지 않았을 때의 처리
+                showAllPosts();
+            }
+        });
+
+        themeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+                // 선택된 테마에 따라 postList 필터링
+                filterPosts(localSpinner.getSelectedItem().toString(), themeList.get(position));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+                // 아무것도 선택되지 않았을 때의 처리
+                showAllPosts();
+            }
+        });
 
 
 
@@ -152,23 +182,19 @@ public class CommunityScreenFragment extends Fragment  {
         return rootView;
     }
 
+    private void filterPosts(String selectedLocal, String selectedTheme) {
+        // DBHelper에서 해당 지역과 테마에 맞는 데이터 가져오기
+        DBHelper dbHelper = new DBHelper(getActivity());
+        List<Post> filteredPosts = dbHelper.getFilteredPosts(selectedLocal, selectedTheme);
 
-
-
-
-
-    private String convertStreamToString(InputStream is) {
-        Scanner scanner = new Scanner(is).useDelimiter("\\A");
-        return scanner.hasNext() ? scanner.next() : "";
+        // Adapter에 데이터 설정 및 갱신
+        adapter.setPosts(filteredPosts);
+        adapter.notifyDataSetChanged();
+    }
+    private void showAllPosts() {
+        // Implement the logic to show all posts
+        // For example, you can call filterPosts with "전체" for both local and theme categories
+        filterPosts("구 선택", "전체");
     }
 
-
-    // Base64 문자열을 Bitmap으로 변환하는 메서드
-    private Bitmap convertBase64ToBitmap(String base64String) {
-
-        byte[] decodedString = Base64.decode(base64String, Base64.DEFAULT);
-        Log.d("MyTag", "CommunityScreenFragment: convertBase64ToBitmap - Decoded String Length: " + decodedString.length);
-        return BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
-
-    }
 }

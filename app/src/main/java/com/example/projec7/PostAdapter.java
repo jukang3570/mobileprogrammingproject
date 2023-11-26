@@ -31,6 +31,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         this.context = context;
         this.postList = postList;
     }
+    public void setPosts(List<Post> postList) {
+        this.postList = postList;
+    }
 
 
     @NonNull
@@ -56,7 +59,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
             public void onClick(View v) {
                 PostDetailFragment commentFragment = new PostDetailFragment();
                 Bundle bundle = new Bundle();
-               // bundle.putString("postId", post.getId()); // 댓글을 작성할 포스트의 ID 또는 다른 필요한 데이터 추가
+                bundle.putInt("post_id", post.getId()); // 댓글을 작성할 포스트의 ID 또는 다른 필요한 데이터 추가
                 commentFragment.setArguments(bundle);
 
                 // CommentFragment를 다이얼로그로 표시
@@ -102,4 +105,5 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         byte[] decodedString = Base64.decode(base64String, Base64.DEFAULT);
         return BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
     }
+
 }
