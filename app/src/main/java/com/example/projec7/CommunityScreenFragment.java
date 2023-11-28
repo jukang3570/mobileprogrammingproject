@@ -1,54 +1,30 @@
 package com.example.projec7;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+
 import android.os.Bundle;
-import android.util.Base64;
-import android.util.Log;
+
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ScrollView;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentResultListener;
+
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.room.Database;
-import androidx.room.Room;
+
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+
+import androidx.appcompat.widget.SearchView;
 import android.widget.Spinner;
-import android.widget.TextView;
 
-import com.example.projec7.Post;
-import com.example.projec7.PostAdapter;
-import com.example.projec7.WriteFragment;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.io.BufferedInputStream;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
-
+;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -73,6 +49,7 @@ public class CommunityScreenFragment extends Fragment  {
     private ArrayAdapter<String> themeAdapter;
     private List<Post> postList;
     private PostAdapter adapter;
+    private SearchView searchView;
 
 
     public CommunityScreenFragment() {
@@ -117,6 +94,9 @@ public class CommunityScreenFragment extends Fragment  {
         themeSpinner.setAdapter(themeAdapter);
 
         bWrite = rootView.findViewById(R.id.WriteButton);
+
+        searchView = rootView.findViewById(R.id.search);
+
 
         // RecyclerView 초기화 및 레이아웃 매니저 설정
         recyclerView = rootView.findViewById(R.id.recyclerView);
@@ -176,10 +156,32 @@ public class CommunityScreenFragment extends Fragment  {
                 requireActivity().getSupportFragmentManager().executePendingTransactions();
             }
         });
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                // 검색어를 서버로 보내거나 검색 결과를 가져오는 등의 작업을 수행할 수 있습니다.
+                performSearch(query);
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                // 검색어 입력 시 호출되는 부분
+                // 여기에서 실시간으로 검색 결과를 업데이트할 수도 있습니다.
+                return true;
+            }
+        });
 
 
 
         return rootView;
+    }
+    private void performSearch(String query) {
+        DBHelper dbHelper = new DBHelper(getActivity());
+        List<Post> searchResults = dbHelper.searchPosts(query);
+
+        adapter.setPosts(searchResults);
+        adapter.notifyDataSetChanged();
     }
 
     private void filterPosts(String selectedLocal, String selectedTheme) {

@@ -16,8 +16,6 @@ import java.util.List;
 
 public class DBHelper extends SQLiteOpenHelper {
     public static final int POST_DATABASE_VERSION = 1;
-    public static final int COMMENT_DATABASE_VERSION = 2; // Increment this when you modify post_db schema
-
 
     public DBHelper(@Nullable Context context) {
         super(context, "post.db", null,  POST_DATABASE_VERSION);
@@ -32,6 +30,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 "content," +
                 "local_category," +
                 "theme_category," +
+                "password," +
                 "image_data)";
 
         String commentSQL = "create table comment_db (" +
@@ -51,6 +50,8 @@ public class DBHelper extends SQLiteOpenHelper {
     public void println(String data){
         Log.d("DatabaseHelper" , data);
     }
+
+    //글을 쓰고 데이터베이스에 게시글을 삽입하는 메소드
     public long insertPost(String title, String content, String localCategory, String themeCategory, String imageData) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -65,6 +66,8 @@ public class DBHelper extends SQLiteOpenHelper {
 
         return newRowId;
     }
+
+    //모든 게시글을 가져오는 메소드
     public List<Post> getAllPosts() {
         List<Post> postList = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
@@ -91,7 +94,6 @@ public class DBHelper extends SQLiteOpenHelper {
         while (cursor.moveToNext()) {
             Post post = new Post();
 
-
             post.setTitle(cursor.getString(cursor.getColumnIndexOrThrow("title")));
             post.setContent(cursor.getString(cursor.getColumnIndexOrThrow("content")));
             post.setLocalCategory(cursor.getString(cursor.getColumnIndexOrThrow("local_category" )));
@@ -106,6 +108,8 @@ public class DBHelper extends SQLiteOpenHelper {
 
         return postList;
     }
+
+    //category에 따라 해당 게시글만 뜨도록 하는 메소드
     public List<Post> getFilteredPosts(String localCategory, String themeCategory) {
         List<Post> filteredPosts = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
@@ -167,6 +171,8 @@ public class DBHelper extends SQLiteOpenHelper {
 
         return filteredPosts;
     }
+
+    //댓글 리스트를 가져오는 메소드
     public List<Comment> getCommentsForPost(int postId) {
         List<Comment> comments = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
@@ -206,6 +212,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return comments;
     }
 
+    //댓글 등록하는 메소드
     public long insertComment(int postId, String commentText) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.beginTransaction();
@@ -226,6 +233,51 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+    //게시글 찾는 메소드
+    public List<Post> searchPosts(String query) {
+        List<Post> searchResults = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        String[] projection = {
+                "_id",
+                "title",
+                "content",
+                "local_category",
+                "theme_category",
+                "image_data"
+        };
+
+        // 제목 또는 내용에 대한 검색 쿼리
+        String selection = "title LIKE ? OR content LIKE ?";
+        String[] selectionArgs = {"%" + query + "%", "%" + query + "%"};
+
+        Cursor cursor = db.query(
+                "post_db",
+                projection,
+                selection,
+                selectionArgs,
+                null,
+                null,
+                null
+        );
+
+        while (cursor.moveToNext()) {
+            Post post = new Post();
+            post.setId(cursor.getInt(cursor.getColumnIndexOrThrow("_id")));
+            post.setTitle(cursor.getString(cursor.getColumnIndexOrThrow("title")));
+            post.setContent(cursor.getString(cursor.getColumnIndexOrThrow("content")));
+            post.setLocalCategory(cursor.getString(cursor.getColumnIndexOrThrow("local_category")));
+            post.setThemeCategory(cursor.getString(cursor.getColumnIndexOrThrow("theme_category")));
+            post.setImageData(cursor.getString(cursor.getColumnIndexOrThrow("image_data")));
+
+            searchResults.add(post);
+        }
+
+        cursor.close();
+        db.close();
+
+        return searchResults;
+    }
 
 
     @Override

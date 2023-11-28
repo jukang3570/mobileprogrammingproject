@@ -22,6 +22,7 @@ public class navigator extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,7 @@ public class navigator extends AppCompatActivity {
         heatShelterMapFragment=new HeatShelterMapFragment();
         sharedUmbrellaFragment=new Shared_UmbrellaFragment();
         communityFragment=new CommunityFragment();
+
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
 
