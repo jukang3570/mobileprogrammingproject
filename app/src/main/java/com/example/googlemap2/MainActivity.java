@@ -19,6 +19,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -39,6 +40,10 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     List<Marker> markerList = new ArrayList<>();
     int[] n;
     int tmp;
+
+    String [] IconName = {"marker0","marker1","marker2","marker3","marker4","marker5","marker6","marker7","marker8","marker9"};
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,7 +85,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
             Marker marker = mMap.addMarker(new MarkerOptions()
                     .position(locations[i])
                     .snippet(n[i] + "개 남았습니다.")
-                    .icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("custom_marker", 115, 115))));
+                    .icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("marker0", 115, 201))));
 
             if (i==0)
                 marker.setTitle("서울 중심");
@@ -135,11 +140,16 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
                     // 기존 마커의 snippet 업데이트
                     Marker marker = markerList.get(tmp);
+
                     if (n[tmp] > 9) {
-                        marker.setSnippet("10개 이상 남았습니다.");
+                        marker.setSnippet(n[tmp] + "개 남았습니다.");
+                        marker.setIcon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("marker9over", 115, 201)));
+
                     } else {
                         marker.setSnippet(n[tmp] + "개 남았습니다.");
+                        marker.setIcon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons(IconName[n[tmp]], 115, 201)));
                     }
+
                     marker.showInfoWindow();
                 } catch (NumberFormatException e) {
                     Toast.makeText(MainActivity.this, "올바른 개수를 입력하세요.", Toast.LENGTH_SHORT).show();
@@ -178,9 +188,12 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                         // 기존 마커의 snippet 업데이트
                         Marker marker = markerList.get(tmp);
                         if (n[tmp] > 9) {
-                            marker.setSnippet("10개 이상 남았습니다.");
+                            marker.setSnippet(n[tmp] + "개 남았습니다.");
+                            marker.setIcon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("marker9over", 115, 201)));
+
                         } else {
                             marker.setSnippet(n[tmp] + "개 남았습니다.");
+                            marker.setIcon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons(IconName[n[tmp]], 115, 201)));
                         }
                         marker.showInfoWindow();
                     } else if (intValue > 2) {
@@ -230,10 +243,11 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                         .position(newMarkerLocation)
                         .snippet("0개 남았습니다.")
                         .title(titleInput) // 사용자가 입력한 문자열로 타이틀 설정
-                        .icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("custom_marker", 115, 115))));
+                        .icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("marker0", 115, 201))));
 
                 // 마커 리스트에 추가
                 markerList.add(newMarker);
+
 
                 // n 배열 크기 늘리기
                 int[] newN = new int[n.length + 1];
@@ -245,7 +259,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
                 // 카메라 이동
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(newMarkerLocation));
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(newMarkerLocation, 12));
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(newMarkerLocation, 23));
 
                 Toast.makeText(MainActivity.this, "현재 위치에 새로운 장소가 등록되었습니다", Toast.LENGTH_SHORT).show();
             }
