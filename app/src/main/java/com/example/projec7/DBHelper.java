@@ -298,6 +298,20 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
         return deletedRows;
     }
+    public int deletePost(int postId) {
+        SQLiteDatabase db = getWritableDatabase();
+        String whereClause = "_id = ?";
+        String[] whereArgs = {String.valueOf(postId)};
+
+        // 게시글 삭제
+        int deletedRows = db.delete("post_db", whereClause, whereArgs);
+
+        // 게시글에 속한 댓글들도 삭제
+        db.delete("comment_db", "post_id = ?", new String[]{String.valueOf(postId)});
+
+        db.close();
+        return deletedRows;
+    }
 
 
 

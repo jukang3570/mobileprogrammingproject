@@ -26,10 +26,12 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
 
     private List<Post> postList;
     private Context context;
+    private DBHelper dbHelper;
 
     public PostAdapter(Context context, List<Post> postList) {
         this.context = context;
         this.postList = postList;
+
     }
     public void setPosts(List<Post> postList) {
         this.postList = postList;
@@ -59,11 +61,24 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
             public void onClick(View v) {
                 PostDetailFragment commentFragment = new PostDetailFragment();
                 Bundle bundle = new Bundle();
-                bundle.putInt("post_id", post.getId()); // 댓글을 작성할 포스트의 ID 또는 다른 필요한 데이터 추가
+                bundle.putInt("post_id", post.getId());
                 commentFragment.setArguments(bundle);
 
                 // CommentFragment를 다이얼로그로 표시
                 commentFragment.show(((AppCompatActivity) context).getSupportFragmentManager(), "comment_dialog");
+            }
+        });
+        holder.DeleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 데이터베이스에서 삭제
+                dbHelper = new DBHelper(context);
+                dbHelper.deletePost(post.getId());
+
+                // 어댑터에서도 삭제
+                int deletedPosition = postList.indexOf(post);
+                postList.remove(deletedPosition);
+                notifyItemRemoved(deletedPosition);
             }
         });
         // 이미지를 표시하는 부분
@@ -89,6 +104,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         TextView themeTextView;
         ImageView imageView;
         ImageButton CommentButton;
+        ImageButton DeleteButton;
 
         public PostViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -98,6 +114,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
             themeTextView=itemView.findViewById(R.id.postThemeCategoryTextView);
             imageView = itemView.findViewById(R.id.postImageView);
             CommentButton= itemView.findViewById(R.id.CommentButton);
+            DeleteButton=itemView.findViewById(R.id.deleteButton);
+
         }
     }
 

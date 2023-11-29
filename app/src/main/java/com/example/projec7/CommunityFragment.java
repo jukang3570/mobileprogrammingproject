@@ -23,6 +23,7 @@ public class CommunityFragment extends Fragment {
 
 
 
+
     public CommunityFragment() {
         // Required empty public constructor
     }

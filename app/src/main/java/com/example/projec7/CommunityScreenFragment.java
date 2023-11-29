@@ -159,15 +159,14 @@ public class CommunityScreenFragment extends Fragment  {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                // 검색어를 서버로 보내거나 검색 결과를 가져오는 등의 작업을 수행할 수 있습니다.
+
                 performSearch(query);
                 return true;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                // 검색어 입력 시 호출되는 부분
-                // 여기에서 실시간으로 검색 결과를 업데이트할 수도 있습니다.
+
                 return true;
             }
         });
@@ -194,8 +193,6 @@ public class CommunityScreenFragment extends Fragment  {
         adapter.notifyDataSetChanged();
     }
     private void showAllPosts() {
-        // Implement the logic to show all posts
-        // For example, you can call filterPosts with "전체" for both local and theme categories
         filterPosts("구 선택", "전체");
     }
 
