@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -24,6 +27,8 @@
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@drawable/click_color" />
+
+<!--        여기 구글맵 gpi자리-->
 
         <activity
             android:name=".navigator"
