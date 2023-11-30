@@ -24,9 +24,7 @@
             android:name=".WaterCarFragment"
             android:exported="false" />
 
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAGGp3c8ls8AXIp6LpMP-L2p-MxE4wZqXU"/>
+<!--         api키 들어갈 자리 -->
 
         <meta-data
             android:name="com.google.android.actions"
