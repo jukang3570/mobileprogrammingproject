@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import com.example.projec7.R;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -17,6 +18,7 @@ public class navigator extends AppCompatActivity {
     private Shared_UmbrellaFragment sharedUmbrellaFragment;
     private HeatIslandMapFragment heatIslandMapFragment;
     private HeatShelterMapFragment heatShelterMapFragment;
+    private HeatShelterAPI heatShelterAPI;
     private CommunityFragment communityFragment;
 
 
@@ -50,7 +52,9 @@ public class navigator extends AppCompatActivity {
                 } else if (item.getItemId() == R.id.Heat_islandMap) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, heatIslandMapFragment).commit();
                 } else if (item.getItemId() == R.id.Heat_shelter) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, heatShelterMapFragment).commit();
+//                    getSupportFragmentManager().beginTransaction().replace(R.id.container, heatShelterMapFragment).commit();
+                    Intent intent = new Intent(navigator.this, HeatShelterAPI.class);
+                    startActivity(intent);
                 } else if (item.getItemId() == R.id.community) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, communityFragment).commit();
                 }
