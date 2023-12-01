@@ -41,6 +41,7 @@ public class CommunityScreenFragment extends Fragment  {
 
     private RecyclerView recyclerView;
     ImageButton bWrite;
+    ImageButton waterCar;
     private Spinner localSpinner;
     private Spinner themeSpinner;
     private ArrayList<String> localList;
@@ -84,21 +85,17 @@ public class CommunityScreenFragment extends Fragment  {
 
         themeAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_spinner_item, themeList);
         themeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Inflate the layout for this fragment
+
+
         View rootView = inflater.inflate(R.layout.fragment_community_screen, container, false);
         localSpinner = rootView.findViewById(R.id.local_category);
         themeSpinner = rootView.findViewById(R.id.theme_category);
-
-        // Spinner에 어댑터 설정
         localSpinner.setAdapter(localAdapter);
         themeSpinner.setAdapter(themeAdapter);
 
         bWrite = rootView.findViewById(R.id.WriteButton);
-
+        waterCar=rootView.findViewById(R.id.WaterCarButton);
         searchView = rootView.findViewById(R.id.search);
-
-
-        // RecyclerView 초기화 및 레이아웃 매니저 설정
         recyclerView = rootView.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
 
@@ -106,7 +103,7 @@ public class CommunityScreenFragment extends Fragment  {
         DBHelper dbHelper = new DBHelper(getActivity());
 
         // PostAdapter 객체 초기화 및 데이터 설정
-        postList = new ArrayList<>(); // postList 초기화
+        postList = new ArrayList<>();
         postList.addAll(dbHelper.getAllPosts());
         adapter = new PostAdapter(getActivity(), postList);
         recyclerView.setAdapter(adapter);
@@ -148,10 +145,20 @@ public class CommunityScreenFragment extends Fragment  {
         bWrite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // WriteFragment로 이동하는 코드 작성
+                // WriteFragment로 이동
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                 WriteFragment writeFragment = new WriteFragment();
                 transaction.replace(R.id.container, writeFragment);
+                transaction.commit();
+                requireActivity().getSupportFragmentManager().executePendingTransactions();
+            }
+        });
+        waterCar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                WaterCarFragment waterCarFragment = new WaterCarFragment();
+                transaction.replace(R.id.container, waterCarFragment);
                 transaction.commit();
                 requireActivity().getSupportFragmentManager().executePendingTransactions();
             }

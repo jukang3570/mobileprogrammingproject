@@ -14,7 +14,7 @@ public class navigator extends AppCompatActivity {
     private Shared_UmbrellaFragment sharedUmbrellaFragment;
     private HeatIslandMapFragment heatIslandMapFragment;
     private HeatShelterMapFragment heatShelterMapFragment;
-    private CommunityFragment communityFragment;
+    private CommunityScreenFragment communityScreenFragment;
 
 
 
@@ -30,7 +30,7 @@ public class navigator extends AppCompatActivity {
         heatIslandMapFragment=new HeatIslandMapFragment();
         heatShelterMapFragment=new HeatShelterMapFragment();
         sharedUmbrellaFragment=new Shared_UmbrellaFragment();
-        communityFragment=new CommunityFragment();
+        communityScreenFragment=new CommunityScreenFragment();
 
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
@@ -49,13 +49,16 @@ public class navigator extends AppCompatActivity {
                 } else if (item.getItemId() == R.id.Heat_shelter) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, heatShelterMapFragment).commit();
                 } else if (item.getItemId() == R.id.community) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, communityFragment).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, communityScreenFragment).commit();
                 }
                 return true;
             }
         });
 
 
+
+
+        bottomNavigationView.setSelectedItemId(R.id.navigate_home);
 
 
     }

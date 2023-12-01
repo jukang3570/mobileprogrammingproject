@@ -1,5 +1,6 @@
 package com.example.projec7;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,10 +16,12 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
 
     private List<Comment> commentList;
     private OnDeleteClickListener onDeleteClickListener;
+    private DBHelper dbHelper;
+    private Context context;
 
-    public CommentAdapter(List<Comment> commentList) {
+    public CommentAdapter(List<Comment> commentList, Context context) {
         this.commentList = commentList;
-
+        this.context = context;
     }
 
     @NonNull
@@ -35,14 +38,18 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
         Comment comment = commentList.get(position);
         holder.commentText.setText(comment.getCommentText());
 
+
         holder.deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                // 삭제 버튼 클릭 시 onDeleteClickListener를 통해 해당 위치(position)을 전달
-                int adapterPosition = holder.getAdapterPosition();
-                if (onDeleteClickListener != null && adapterPosition != RecyclerView.NO_POSITION) {
-                    onDeleteClickListener.onDeleteClick(adapterPosition);
-                }
+            public void onClick(View view) {
+                // 데이터베이스에서 삭제
+                dbHelper = new DBHelper(context);
+                dbHelper.deleteComment(comment.getId());
+
+                // 어댑터에서도 삭제
+                int deletedPosition = commentList.indexOf(comment);
+                commentList.remove(deletedPosition);
+                notifyItemRemoved(deletedPosition);
             }
         });
 
@@ -57,16 +64,13 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
         TextView commentText;
         ImageButton deleteButton;
 
-        // ViewHolder 생성자에서 onDeleteClickListener 초기화는 삭제함.
-
-        // ViewHolder 생성자에서 onDeleteClickListener를 받도록 추가
         ViewHolder(View itemView) {
             super(itemView);
 
             commentText = itemView.findViewById(R.id.commentText);
             deleteButton = itemView.findViewById(R.id.deleteButton);
 
-            // DeleteButton을 클릭했을 때 처리할 로직을 여기에 추가합니다.
+
             deleteButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
