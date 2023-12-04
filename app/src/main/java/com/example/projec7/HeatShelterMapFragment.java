@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 
 import com.example.projec7.databinding.FragmentHeatShelterMapBinding;
@@ -324,6 +325,7 @@ public class HeatShelterMapFragment extends FragmentActivity implements OnMapRea
                 });
         builder.show();
     }
+
 
     //액티비티가 종료될 때 위치 업데이트 중지
 

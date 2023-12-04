@@ -18,7 +18,7 @@ public class navigator extends AppCompatActivity {
     private Shared_UmbrellaFragment sharedUmbrellaFragment;
     private HeatIslandMapFragment heatIslandMapFragment;
     private HeatShelterMapFragment heatShelterMapFragment;
-    private HeatShelterAPI heatShelterAPI;
+//    private HeatShelterAPI heatShelterAPI;
     private CommunityFragment communityFragment;
 
 

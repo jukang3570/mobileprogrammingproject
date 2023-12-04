@@ -36,7 +36,7 @@ import java.util.HashMap;
 public class HeatShelterAPI extends AppCompatActivity {
 
     private TextView resultTextView;
-    String key="여긴 서울시 api키 들어갈자리";
+    String key="여기에 숫자 넣으세용";
     String data;
 
     //파싱한 좌표 데이터를 저장하는 ArrayList 선언
@@ -44,6 +44,7 @@ public class HeatShelterAPI extends AppCompatActivity {
 
     //각 좌표에 대한 정보를 저장하는 HashMap
     private HashMap<LatLng, MarkerInfo> markerInfoMap = new HashMap<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
