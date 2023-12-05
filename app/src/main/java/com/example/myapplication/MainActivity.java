@@ -1,60 +1,61 @@
+// MainActivity.java
 package com.example.myapplication;
 
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Paint;
+import android.graphics.Region;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ImageView;
+import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
 import com.devs.vectorchildfinder.VectorChildFinder;
 import com.devs.vectorchildfinder.VectorDrawableCompat;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private ImageView mapImageView;
+    int color;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        int[] tmp = new int[25];
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mapImageView = findViewById(R.id.iv_korea);
 
-        ImageView ivSeoul  = findViewById(R.id.iv_korea);
+        // 'Jung-gu'의 '온도평균' 값을 가져와서 '중구'를 강조
 
+        VectorChildFinder vector = new VectorChildFinder(this, R.drawable.seoul_districts, mapImageView);
 
-        VectorChildFinder vector = new VectorChildFinder(this, R.drawable.seoul_districts,ivSeoul);
-        VectorDrawableCompat.VFullPath Dobonggu = vector.findPathByName("도봉구");
-        VectorDrawableCompat.VFullPath Dongdaemungu = vector.findPathByName("동대문구");
-        VectorDrawableCompat.VFullPath Dongjak = vector.findPathByName("동작구");
-        VectorDrawableCompat.VFullPath EunPyeong = vector.findPathByName("은평구");
-        VectorDrawableCompat.VFullPath Gangbuk = vector.findPathByName("강북구");
-        VectorDrawableCompat.VFullPath Gangdong = vector.findPathByName("강동구");
-        VectorDrawableCompat.VFullPath Gangseo = vector.findPathByName("강서구");
-        VectorDrawableCompat.VFullPath Geumcheon = vector.findPathByName("금천구");
-        VectorDrawableCompat.VFullPath Guro = vector.findPathByName("구로구");
-        VectorDrawableCompat.VFullPath Gwanak = vector.findPathByName("관악구");
-        VectorDrawableCompat.VFullPath Gwangjin = vector.findPathByName("광진구");
-        VectorDrawableCompat.VFullPath Gangnam = vector.findPathByName("강남구");
-        VectorDrawableCompat.VFullPath Jonglo = vector.findPathByName("종로구");
-        VectorDrawableCompat.VFullPath Jungku = vector.findPathByName("중구");
-        VectorDrawableCompat.VFullPath Junglang = vector.findPathByName("중랑구");
-        VectorDrawableCompat.VFullPath Mapo = vector.findPathByName("마포구");
-        VectorDrawableCompat.VFullPath Nowon = vector.findPathByName("노원구");
-        VectorDrawableCompat.VFullPath Seocho = vector.findPathByName("서초구");
-        VectorDrawableCompat.VFullPath Seodaemoon = vector.findPathByName("서대문구");
-        VectorDrawableCompat.VFullPath Seongbuk = vector.findPathByName("성북구");
-        VectorDrawableCompat.VFullPath Sedongdong = vector.findPathByName("성동구");
-        VectorDrawableCompat.VFullPath Songpa = vector.findPathByName("송파구");
-        VectorDrawableCompat.VFullPath Yangcheo = vector.findPathByName("양천구");
-        VectorDrawableCompat.VFullPath Younddeungpo = vector.findPathByName("영등포구");
-        VectorDrawableCompat.VFullPath Yongsan = vector.findPathByName("용산구");
+        VectorDrawableCompat.VFullPath[] districts = new VectorDrawableCompat.VFullPath[25];
 
-        new ApiCallAsyncTask().execute();
-        int color = Color.argb( 244,255, 0, 0);
-        Dongjak.setFillColor(color);
-        ivSeoul.invalidate();
+        String[] districtNames = {
+                "도봉구", "동대문구", "동작구", "은평구", "강북구", "강동구", "강서구", "금천구", "구로구",
+                "관악구", "광진구", "강남구", "종로구", "중구", "중랑구", "마포구", "노원구", "서초구",
+                "서대문구", "성북구", "성동구", "송파구", "양천구", "영등포구", "용산구"
+        };
+
+        String[] RegionNames = {
+                "Dobong-gu","Dongdaemun-gu","Dongjak-gu","Eunpyeong-gu","Gangbuk-gu","Gandong-gu", "Gangseo-gu","Geumcheon-gu","Guro-gu",
+                "Gwanak-gu", "Gwangjin-gu", "Gangnam-gu", "Jongno-gu", "Jung-gu", "Jungnang-gu", "Mapo-gu", "Nowon-gu", "Seocho-gu",
+                "Seodaemun-gu", "Seongbuk-gu", "Seongdong-gu", "Songpa-gu", "Yangcheon-gu", "Yeongdeungpo-gu", "Yongsan-gu"
+        };
+
+        for (int i = 0; i < districts.length; i++) {
+            districts[i] = vector.findPathByName(districtNames[i]);
+        }
+        for (int i = 0; i < RegionNames.length; i++) {
+            List<Integer> temperatures = MapHelper.getTemperaturesFromCSV(this, RegionNames[i]);
+            tmp[i] = temperatures.isEmpty() ? 0 : temperatures.get(0);
+        }
+
+        for(int i=0;i<tmp.length;i++){
+            color = Color.argb(tmp[i], 255, 0, 0);
+            districts[i].setFillColor(color);
+        }
+        mapImageView.invalidate();
     }
-
 }
+
+
