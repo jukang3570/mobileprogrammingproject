@@ -35,8 +35,8 @@ import java.util.HashMap;
 // 경로당 데이터 빼기
 public class HeatShelterAPI extends AppCompatActivity {
 
-    private TextView resultTextView;
-    String key="여기에 숫자 넣으세용";
+    public TextView resultTextView;
+    String key="여기숫자입력";
     String data;
 
     //파싱한 좌표 데이터를 저장하는 ArrayList 선언
@@ -49,9 +49,9 @@ public class HeatShelterAPI extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_heatshelterapi);
 
-        resultTextView = findViewById(R.id.resultTextView);
+        resultTextView = (TextView)findViewById(R.id.resultTextView);
 
         new Thread(new Runnable() {
             @Override

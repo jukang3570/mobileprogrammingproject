@@ -15,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Projec7"
         tools:overrideLibrary="com.android.car.ui"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
             android:name=".CommunityScreenFragment"
@@ -40,26 +41,26 @@
             </intent-filter>
         </activity>
 
-<!--        <activity-->
-<!--            android:name=".HeatShelterAPI"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+        <activity
+            android:name=".HeatShelterAPI"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
-<!--        <activity-->
-<!--            android:name=".HeatShelterMapFragment"-->
-<!--            android:exported="true"-->
-<!--            android:label="@string/title_activity_HeatShel" >-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+        <activity
+            android:name=".HeatShelterMapFragment"
+            android:exported="true"
+            android:label="@string/title_activity_HeatShelter" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
     </application>
     <!--    <uses-permission android:name="android.permission.INTERNET" />-->
