@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="local_array">
+        <item>구 선택</item>
+        <item>강남구</item>
+        <item>강동구</item>
+        <item>강북구</item>
+        <item>강서구</item>
+        <item>관악구</item>
+        <item>광진구</item>
+        <item>구로구</item>
+        <item>금천구</item>
+        <item>노원구</item>
+        <item>도봉구</item>
+        <item>동대문구</item>
+        <item>동작구</item>
+        <item>마포구</item>
+        <item>서대문구</item>
+        <item>서초구</item>
+        <item>성동구</item>
+        <item>성북구</item>
+        <item>송파구</item>
+        <item>양천구</item>
+        <item>영등포구</item>
+        <item>용산구</item>
+        <item>은평구</item>
+        <item>종로구</item>
+        <item>중구</item>
+        <item>중랑구</item>
+    </string-array>
+    <string-array name="theme_array">
+
+        <item>전체</item>
+        <item>시민 참여</item>
+        <item>사건/사고</item>
+        <item>아이디어</item>
+        <item>이벤트/행사</item>
+
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="purple">#8A2BE2</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#F4FF81 </color>
+    <string name="SEOUL_SHELTER_API_KEY">MY_API_KEY</string>
+    <string name="app_name">projec7</string>
+    <string name="title_activity_HeatShel">HeatShel</string>
+    <style name="Base.Theme.Projec7" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="CustomDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+    <style name="Theme.Projec7" parent="Base.Theme.Projec7"/>
+</resources>

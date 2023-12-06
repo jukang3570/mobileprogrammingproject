@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-mergeDebugResources-40:\\layout\\fragment_write.xml",
+        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_write.xml"
+    },
+    {
+        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-mergeDebugResources-40:\\layout\\fragment_post_detail.xml",
+        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_post_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-mergeDebugResources-40:\\layout\\activity_heatshelterapi.xml",
+        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\activity_heatshelterapi.xml"
+    },
+    {
+        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-mergeDebugResources-40:\\layout\\fragment_shared__umbrella.xml",
+        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_shared__umbrella.xml"
+    },
+    {
+        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-mergeDebugResources-40:\\layout\\fragment_water_car.xml",
+        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_water_car.xml"
+    },
+    {
+        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-mergeDebugResources-40:\\layout\\fragment_community_screen.xml",
+        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_community_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-mergeDebugResources-40:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.projec7.app-mergeDebugResources-40:/layout/fragment_heat_shelter_map.xml",
+        "source": "com.example.projec7.app-main-43:/layout/fragment_heat_shelter_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-mergeDebugResources-40:\\layout\\fragment_heat_shelter_map.xml",
+        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_heat_shelter_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-mergeDebugResources-40:\\layout\\comment_item.xml",
+        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\comment_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-mergeDebugResources-40:\\layout\\fragment_heat_island_map.xml",
+        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_heat_island_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-mergeDebugResources-40:\\layout\\activity_navigator.xml",
+        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\activity_navigator.xml"
+    },
+    {
+        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-mergeDebugResources-40:\\layout\\post_item.xml",
+        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\post_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-mergeDebugResources-40:\\layout\\fragment_community.xml",
+        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_community.xml"
+    },
+    {
+        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-mergeDebugResources-40:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_home.xml"
+    }
+]

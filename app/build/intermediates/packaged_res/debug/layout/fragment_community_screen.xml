@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/fragment_community_screen.xml -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/community_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommunityScreenFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.SearchView
+
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:layout_margin="10dp"
+            android:iconifiedByDefault="false"
+           />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/local_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+            <Spinner
+                android:id="@+id/theme_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+
+
+        </LinearLayout>
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:layout_margin="10dp"
+            tools:listitem="@layout/post_item" />
+
+
+
+        <ImageButton
+            android:id="@+id/WriteButton"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/btn_star" />
+    </LinearLayout>
+
+</FrameLayout>
