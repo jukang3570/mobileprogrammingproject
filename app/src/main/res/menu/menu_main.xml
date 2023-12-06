@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_hot"
+        android:title="온도 지도"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_water"
+        android:title="습도 지도"
+        app:showAsAction="never"/>
+</menu>

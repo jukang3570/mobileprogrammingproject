@@ -1,0 +1,8 @@
+<!-- arrays.xml -->
+<resources>
+    <string-array name="image_options">
+        <item>hot_map</item>
+        <item>water_map</item>
+        <item>Image 3</item>
+    </string-array>
+</resources>

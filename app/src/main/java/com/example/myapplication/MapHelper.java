@@ -11,9 +11,10 @@ import java.util.List;
 
 public class MapHelper {
 
-    public static List<Integer> getTemperaturesFromCSV(Context context, String districtName) {
+    public static double getTemperaturesFromCSV(Context context, String districtName) {
         List<Integer> temperatures = new ArrayList<>();
-
+        double sum = 0.0;
+        int totalCount = 0;
         try {
             InputStream inputStream = context.getAssets().open("nature.csv");
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
@@ -23,10 +24,14 @@ public class MapHelper {
             while ((line = bufferedReader.readLine()) != null) {
                 String[] parts = line.split(",");
                 if (parts.length == 2 && parts[0].trim().equals(districtName)) {
-                    float temperature = Float.parseFloat(parts[1].trim());
+                    double temperature = Float.parseFloat(parts[1].trim());
                     // 반올림하여 가장 가까운 정수로 변환 후 리스트에 추가합니다.
-                    int roundedTemperature = Math.round(temperature);
-                    temperatures.add(roundedTemperature);
+                    //int roundedTemperature = Math.round(temperature);
+                    //temperatures.add(roundedTemperature);
+
+                    //double temperature = Double.parseDouble(value);
+                    sum += temperature;
+                    totalCount++;
                 }
             }
 
@@ -34,8 +39,8 @@ public class MapHelper {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        return temperatures;
+        double overallAverage = (totalCount > 0) ? sum / totalCount : 0.0;
+        return overallAverage;
     }
 
     // 나머지 메서드들...

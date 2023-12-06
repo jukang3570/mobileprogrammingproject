@@ -79,5 +79,4 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.0" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="My_Application.vectorchildfinder.main" />
 </module>
