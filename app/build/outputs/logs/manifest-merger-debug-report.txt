@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-88:12
-INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-88:12
-INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-88:12
-INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-88:12
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-81:12
 MERGED from [androidx.databinding:viewbinding:8.1.1] /Users/sola/.gradle/caches/transforms-3/b7390dd1d2fba2283d09c478230b36ac/transformed/viewbinding-8.1.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.10.0] /Users/sola/.gradle/caches/transforms-3/8834d456fea0a5c766a8704e66cc064a/transformed/material-1.10.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:17:1-51:12
@@ -86,8 +86,8 @@ MERGED from [com.google.android.gms:play-services-maps:18.1.0] /Users/sola/.grad
 	android:name
 		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:8:5-85:19
-INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:8:5-85:19
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:9:5-79:19
+INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:9:5-79:19
 MERGED from [com.google.android.material:material:1.10.0] /Users/sola/.gradle/caches/transforms-3/8834d456fea0a5c766a8704e66cc064a/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] /Users/sola/.gradle/caches/transforms-3/8834d456fea0a5c766a8704e66cc064a/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:36:5-49:19
@@ -121,85 +121,91 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/sola
 	android:extractNativeLibs
 		INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:8:18-64
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:9:18-64
 	android:roundIcon
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:14:9-54
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:13:9-43
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] /Users/sola/.gradle/caches/transforms-3/0bb5616a7558933ce9ef66db5210a361/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:13:9-41
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:14:9-41
 	tools:overrideLibrary
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:17:9-51
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:19:9-51
 	android:fullBackupContent
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:12:9-54
 	tools:targetApi
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:19:9-29
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:20:9-29
 	android:allowBackup
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:16:9-45
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:17:9-45
 	android:dataExtractionRules
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:10:9-65
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:11:9-65
 	android:usesCleartextTraffic
 		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:18:9-44
-activity#com.example.projec7.CommunityScreenFragment
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:20:9-22:40
+activity#com.example.projec7.IntroActivity
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:23:9-30:20
 	android:exported
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:22:13-37
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:24:13-36
 	android:name
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:21:13-52
-activity#com.example.projec7.WaterCarFragment
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:23:9-25:40
-	android:exported
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:25:13-37
-	android:name
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:24:13-45
-meta-data#com.google.android.actions
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:27:9-29:56
-	android:resource
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:29:13-53
-	android:name
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:28:13-54
-meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:32:9-34:71
-	android:value
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:34:13-68
-	android:name
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:33:13-58
-activity#com.example.projec7.navigator
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:37:9-45:20
-	android:exported
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:39:13-36
-	android:name
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:38:13-38
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:23:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:40:13-44:29
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:41:17-69
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:41:25-66
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:43:17-77
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:43:27-74
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:28:27-74
+activity#com.example.projec7.navigator
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:32:9-40:20
+	android:exported
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:34:13-36
+	android:name
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:33:13-38
+activity#com.example.projec7.CommunityScreenFragment
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:42:9-44:40
+	android:exported
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:44:13-37
+	android:name
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:43:13-52
+activity#com.example.projec7.WaterCarFragment
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:45:9-47:40
+	android:exported
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:46:13-45
+meta-data#com.google.android.actions
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:49:9-51:56
+	android:resource
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:51:13-53
+	android:name
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:50:13-54
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:54:9-56:71
+	android:value
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:56:13-68
+	android:name
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:55:13-58
 activity#com.example.projec7.HeatShelterAPI
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:46:9-52:20
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:59:9-67:20
 	android:exported
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:47:13-36
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:61:13-36
 	android:name
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:46:19-49
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:60:13-43
 activity#com.example.projec7.HeatShelterMapFragment
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:53:9-62:20
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:69:9-78:20
 	android:label
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:56:13-60
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:72:13-60
 	android:exported
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:55:13-36
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:71:13-36
 	android:name
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:54:13-51
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:70:13-51
 uses-sdk
 INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml

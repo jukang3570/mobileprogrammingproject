@@ -6,6 +6,7 @@ color black
 color purple
 color white
 color yellow
+drawable back
 drawable click_color
 drawable edittext_border
 drawable fan
@@ -19,6 +20,7 @@ drawable ic_launcher_foreground
 drawable ic_shared_umbrella
 drawable ic_watercar
 drawable round_corner
+drawable v
 font bareunhippy
 font custom_font_family
 font nanum
@@ -65,6 +67,7 @@ id theme_category
 id titleText
 id water_car_button
 layout activity_heatshelterapi
+layout activity_intro
 layout activity_main
 layout activity_navigator
 layout comment_item

@@ -4,12 +4,12 @@
         "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/activity_heatshelterapi.xml"
     },
     {
-        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-mergeDebugResources-40:/layout/fragment_shared__umbrella.xml",
-        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_shared__umbrella.xml"
-    },
-    {
         "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-mergeDebugResources-40:/layout/comment_item.xml",
         "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/comment_item.xml"
+    },
+    {
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-mergeDebugResources-40:/layout/fragment_shared__umbrella.xml",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_shared__umbrella.xml"
     },
     {
         "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-mergeDebugResources-40:/layout/fragment_post_detail.xml",
@@ -44,8 +44,8 @@
         "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_home.xml"
     },
     {
-        "merged": "com.example.projec7.app-mergeDebugResources-40:/layout/fragment_water_car.xml",
-        "source": "com.example.projec7.app-main-43:/layout/fragment_water_car.xml"
+        "merged": "com.example.projec7.app-mergeDebugResources-40:/layout/activity_intro.xml",
+        "source": "com.example.projec7.app-main-43:/layout/activity_intro.xml"
     },
     {
         "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-mergeDebugResources-40:/layout/fragment_heat_island_map.xml",

@@ -3355,6 +3355,7 @@ int drawable abc_textfield_search_material 0x7f080076
 int drawable abc_vector_test 0x7f080077
 int drawable avd_hide_password 0x7f080078
 int drawable avd_show_password 0x7f080079
+int drawable back 0x7f080138
 int drawable btn_checkbox_checked_mtrl 0x7f08007a
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f08007b
 int drawable btn_checkbox_unchecked_mtrl 0x7f08007c
@@ -3545,6 +3546,7 @@ int drawable round_corner 0x7f080134
 int drawable test_level_drawable 0x7f080135
 int drawable tooltip_frame_dark 0x7f080136
 int drawable tooltip_frame_light 0x7f080137
+int drawable v 0x7f080139
 int font bareunhippy 0x7f090000
 int font custom_font_family 0x7f090001
 int font nanum 0x7f090002
@@ -4361,6 +4363,7 @@ int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
 int layout activity_heatshelterapi 0x7f0d001c
+int layout activity_intro 0x7f0d00d2
 int layout activity_main 0x7f0d001d
 int layout activity_navigator 0x7f0d001e
 int layout car_ui_alert_dialog_edit_text 0x7f0d001f
