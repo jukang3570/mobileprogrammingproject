@@ -19,6 +19,9 @@ drawable ic_launcher_foreground
 drawable ic_shared_umbrella
 drawable ic_watercar
 drawable round_corner
+font bareunhippy
+font custom_font_family
+font nanum
 id CameraButton
 id CommentButton
 id CommentText
@@ -84,5 +87,10 @@ string title_activity_HeatShel
 style Base.Theme.Projec7
 style CustomDialog
 style Theme.Projec7
+style customButtonFontStyle
+style customCheckboxFontStyle
+style customEditTextFontStyle
+style customRadioButtonFontStyle
+style customTextViewFontStyle
 xml backup_rules
 xml data_extraction_rules

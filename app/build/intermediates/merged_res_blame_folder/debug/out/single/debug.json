@@ -1,174 +1,186 @@
 [
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\layout_fragment_post_detail.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_post_detail.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/font_custom_font_family.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/font/custom_font_family.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_ic_shared_umbrella.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/ic_shared_umbrella.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\xml\\backup_rules.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/menu_bottom_bar.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/menu/bottom_bar.xml"
     },
     {
-        "merged": "com.example.projec7.app-merged_res-41:/layout_fragment_heat_shelter_map.xml.flat",
-        "source": "com.example.projec7.app-main-43:/layout/fragment_heat_shelter_map.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\layout_fragment_heat_shelter_map.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_heat_shelter_map.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_ic_community.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/ic_community.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\drawable_ic_watercar.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\drawable\\ic_watercar.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_fragment_home.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\layout_fragment_write.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_write.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_fragment_write.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_write.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\drawable_click_color.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\drawable\\click_color.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\activity_main.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_ic_home.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/ic_home.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\menu_bottom_bar.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\menu\\bottom_bar.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_ic_watercar.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/ic_watercar.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_home.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_ic_camera.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/ic_camera.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/font_nanum.otf.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/font/nanum.otf"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\drawable_ic_home.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\drawable\\ic_home.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_comment_item.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/comment_item.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_fragment_heat_island_map.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_heat_island_map.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\drawable\\ic_launcher_background.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_fragment_community.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_community.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\drawable_edittext_border.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\drawable\\edittext_border.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_activity_navigator.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/activity_navigator.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\layout_activity_heatshelterapi.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\activity_heatshelterapi.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_activity_main.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\drawable_ic_shared_umbrella.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\drawable\\ic_shared_umbrella.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/xml_backup_rules.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\layout_fragment_shared__umbrella.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_shared__umbrella.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\layout_fragment_water_car.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_water_car.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_ic_heat_island.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/ic_heat_island.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\drawable_ic_heat_shelter.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\drawable\\ic_heat_shelter.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\drawable_ic_heat_island.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\drawable\\ic_heat_island.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_fragment_post_detail.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_post_detail.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\layout_fragment_community_screen.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_community_screen.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_fan.png.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/fan.png"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.projec7.app-merged_res-41:/font_custom_font_family.xml.flat",
+        "source": "com.example.projec7.app-main-43:/font/custom_font_family.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\drawable_fan.png.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\drawable\\fan.png"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_click_color.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/click_color.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\drawable_ic_camera.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\drawable\\ic_camera.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\drawable_ic_community.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\drawable\\ic_community.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_round_corner.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/round_corner.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\layout_activity_navigator.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\activity_navigator.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_activity_heatshelterapi.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/activity_heatshelterapi.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\layout_fragment_heat_island_map.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_heat_island_map.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_fragment_shared__umbrella.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_shared__umbrella.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\layout_post_item.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\post_item.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_post_item.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/post_item.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\xml\\data_extraction_rules.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_edittext_border.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/edittext_border.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\layout_fragment_community.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\fragment_community.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_ic_heat_shelter.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/ic_heat_shelter.xml"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\drawable_round_corner.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\drawable\\round_corner.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-merged_res-41:\\layout_comment_item.xml.flat",
-        "source": "C:\\Users\\young\\.gradle\\daemon\\8.0\\com.example.projec7.app-main-43:\\layout\\comment_item.xml"
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_fragment_community_screen.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_community_screen.xml"
+    },
+    {
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_fragment_water_car.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_water_car.xml"
+    },
+    {
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_fragment_heat_shelter_map.xml.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_heat_shelter_map.xml"
+    },
+    {
+        "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/font_bareunhippy.ttf.flat",
+        "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/font/bareunhippy.ttf"
     }
 ]

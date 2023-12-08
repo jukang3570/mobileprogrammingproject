@@ -4,7 +4,7 @@
             "outputFile": "com.example.projec7.app-mergeDebugResources-39:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\young\\.gradle\\caches\\transforms-3\\4f67dfc311dd2680d3f0bf628ba34b33\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
+                    "source": "/Users/sola/.gradle/caches/transforms-3/4f67dfc311dd2680d3f0bf628ba34b33/transformed/appcompat-1.6.1/res/values-port/values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\young\\.gradle\\caches\\transforms-3\\411d9d11bbc0767fda7bcb34e9a1aad1\\transformed\\car-ui-lib-2.5.1\\res\\values-port\\values.xml",
+                    "source": "/Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/res/values-port/values.xml",
                     "from": {
                         "startLines": "4,7,8",
                         "startColumns": "0,0,0",

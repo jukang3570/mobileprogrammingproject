@@ -1,13 +1,13 @@
-#Wed Dec 06 17:28:53 KST 2023
-base.0=C\:\\Users\\young\\AndroidStudioProjects\\mobileprogrammingproject-sola_merge_2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\young\\AndroidStudioProjects\\mobileprogrammingproject-sola_merge_2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\young\\AndroidStudioProjects\\mobileprogrammingproject-sola_merge_2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.3=C\:\\Users\\young\\AndroidStudioProjects\\mobileprogrammingproject-sola_merge_2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.4=C\:\\Users\\young\\AndroidStudioProjects\\mobileprogrammingproject-sola_merge_2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Fri Dec 08 15:48:16 KST 2023
+base.0=/Users/sola/Documents/GitHub/mobileprogrammingproject/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/sola/Documents/GitHub/mobileprogrammingproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/Users/sola/Documents/GitHub/mobileprogrammingproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+base.3=/Users/sola/Documents/GitHub/mobileprogrammingproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
+base.4=/Users/sola/Documents/GitHub/mobileprogrammingproject/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
-path.2=12/classes.dex
-path.3=1/classes.dex
+path.2=1/classes.dex
+path.3=12/classes.dex
 path.4=classes2.dex
 renamed.0=classes.dex
 renamed.1=classes2.dex

@@ -3546,6 +3546,9 @@ drawable round_corner
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font bareunhippy
+font custom_font_family
+font nanum
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -5990,6 +5993,11 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style customButtonFontStyle
+style customCheckboxFontStyle
+style customEditTextFontStyle
+style customRadioButtonFontStyle
+style customTextViewFontStyle
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

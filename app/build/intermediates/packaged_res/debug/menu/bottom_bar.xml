@@ -6,7 +6,8 @@
     <item
         android:id="@+id/shared_umbrella"
         android:icon="@drawable/ic_shared_umbrella"
-        android:title="공유우산"/>
+        android:title="공유우산"
+        />
     <item
         android:id="@+id/Heat_islandMap"
         android:icon="@drawable/ic_heat_island"

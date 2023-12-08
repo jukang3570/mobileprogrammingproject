@@ -14,6 +14,9 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="살수차 투표 화면입니다." />
+            android:text="살수차 투표 화면입니다."
+
+            android:textStyle="normal"
+            />
     </LinearLayout>
 </FrameLayout>
