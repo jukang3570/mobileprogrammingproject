@@ -3,6 +3,8 @@ package com.example.projec7;
 public class address {
     String name;
 
+
+
     public address(String name){
         this.name=name;
     }

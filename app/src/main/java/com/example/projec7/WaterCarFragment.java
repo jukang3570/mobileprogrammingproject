@@ -1,5 +1,6 @@
 package com.example.projec7;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,7 +38,7 @@ public class WaterCarFragment extends Fragment implements onListItemSelectedInte
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        //super.onCreate(savedInstanceState);
         View view = inflater.inflate(R.layout.fragment_water_car, container, false);
         init(view);
         getData();
@@ -51,18 +53,16 @@ public class WaterCarFragment extends Fragment implements onListItemSelectedInte
         btnRes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction transaction=getActivity().getSupportFragmentManager().beginTransaction();
-                voteResult voteresult=new voteResult();
-                transaction.replace(R.id.mainLayout,voteresult);
-                transaction.commit();
-                requireActivity().getSupportFragmentManager().executePendingTransactions();
-
                 DBHelper helper = new DBHelper(requireContext());
                 for (int i=0;i <addName.length;i++){
                     int countValue = voteCount[i];
                     long result = helper.insertAddress(addName[i],countValue);
                 }
 
+
+                requireActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, new voteResult())
+                        .commit();
 
             }
         });

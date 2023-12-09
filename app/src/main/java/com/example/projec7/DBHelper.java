@@ -322,16 +322,75 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public long insertAddress(String address, int count) {
         SQLiteDatabase db = this.getWritableDatabase();
+        long result = -1;
 
-        ContentValues values = new ContentValues();
-        values.put("address", address);
-        values.put("count",count);
+        try {
+            // Begin the transaction
+            db.beginTransaction();
 
-        long result = db.insert("tb_memo", null, values);
+            // Check if the address already exists in the table
+            Cursor cursor = db.rawQuery("SELECT * FROM tb_memo WHERE address = ?", new String[]{address});
+            if (cursor.moveToFirst()) {
+                int countColumnIndex = cursor.getColumnIndex("count");
 
-        db.close();
-        return result;
+                if (countColumnIndex != -1) {
+                    int currentCount = cursor.getInt(countColumnIndex);
+                    int newCount = currentCount + count;
+
+                    ContentValues updateValues = new ContentValues();
+                    updateValues.put("count", newCount);
+
+                    result = db.update("tb_memo", updateValues, "address = ?", new String[]{address});
+                }
+                else {
+
+                }
+
+            } else {
+                // If the address doesn't exist, insert a new record
+                ContentValues insertValues = new ContentValues();
+                insertValues.put("address", address);
+                insertValues.put("count", count);
+
+                result = db.insert("tb_memo", null, insertValues);
+            }
+
+            // Commit the transaction if everything is successful
+            db.setTransactionSuccessful();
+        } finally {
+            // End the transaction, regardless of success or failure
+            db.endTransaction();
+            db.close();
+        }
+            return result;
+
     }
+
+    public ArrayList getOneData(){
+
+        ArrayList res = new ArrayList<votelist>();
+
+
+        Cursor cur = getWritableDatabase().rawQuery("SELECT address, count FROM tb_memo WHERE count > 0", null);
+        int addressIndex = cur.getColumnIndex("address");
+        int countIndex = cur.getColumnIndex("count");
+
+        if (cur != null && addressIndex != -1 && countIndex != -1 && cur.moveToFirst()) {
+            do {
+                String address = cur.getString(addressIndex);
+                int count = cur.getInt(countIndex);
+                res.add(new votelist(address, count));
+            } while (cur.moveToNext());
+        }
+
+
+        if (cur != null) {
+            cur.close();
+        }
+
+        return res;
+    }
+
 
 
 }
