@@ -82,16 +82,16 @@ private HomeFragment homeFragment;
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-                if (item.getItemId() == R.id.shared_umbrella) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, sharedUmbrellaFragment).commit();
+                if (item.getItemId()==R.id.Heat_shelter) {
+                    Intent intent = new Intent(navigator, HeatShelterAPI.class);
+                    startActivity(intent);
+                    return true;
                 } else if (item.getItemId() == R.id.navigate_home) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
                 } else if (item.getItemId() == R.id.Heat_islandMap) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, heatIslandMapFragment).commit();
-                }else if(item.getItemId()==R.id.Heat_shelter) {
-                    Intent intent = new Intent(navigator, HeatShelterAPI.class);
-                    startActivity(intent);
-                    return true;
+                }else if(item.getItemId() == R.id.shared_umbrella) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, sharedUmbrellaFragment).commit();
                 }
                 else if (item.getItemId() == R.id.community) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, communityFragment).commit();

@@ -1,4 +1,4 @@
-#Fri Dec 08 16:09:37 KST 2023
+#Mon Dec 11 14:34:36 KST 2023
 base.0=/Users/sola/Documents/GitHub/mobileprogrammingproject/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/sola/Documents/GitHub/mobileprogrammingproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.2=/Users/sola/Documents/GitHub/mobileprogrammingproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex

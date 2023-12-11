@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-81:12
-INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-81:12
-INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-81:12
-INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-81:12
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-80:12
+INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-80:12
+INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-80:12
+INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:2:1-80:12
 MERGED from [androidx.databinding:viewbinding:8.1.1] /Users/sola/.gradle/caches/transforms-3/b7390dd1d2fba2283d09c478230b36ac/transformed/viewbinding-8.1.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.10.0] /Users/sola/.gradle/caches/transforms-3/8834d456fea0a5c766a8704e66cc064a/transformed/material-1.10.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:17:1-51:12
@@ -86,8 +86,8 @@ MERGED from [com.google.android.gms:play-services-maps:18.1.0] /Users/sola/.grad
 	android:name
 		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:9:5-79:19
-INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:9:5-79:19
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:9:5-78:19
+INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:9:5-78:19
 MERGED from [com.google.android.material:material:1.10.0] /Users/sola/.gradle/caches/transforms-3/8834d456fea0a5c766a8704e66cc064a/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] /Users/sola/.gradle/caches/transforms-3/8834d456fea0a5c766a8704e66cc064a/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:36:5-49:19
@@ -193,19 +193,19 @@ ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/An
 	android:name
 		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:55:13-58
 activity#com.example.projec7.HeatShelterAPI
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:59:9-67:20
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:58:9-66:20
 	android:exported
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:61:13-36
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:60:13-36
 	android:name
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:60:13-43
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:59:13-43
 activity#com.example.projec7.HeatShelterMapFragment
-ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:69:9-78:20
+ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:68:9-77:20
 	android:label
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:72:13-60
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:71:13-60
 	android:exported
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:71:13-36
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:70:13-36
 	android:name
-		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:70:13-51
+		ADDED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:69:13-51
 uses-sdk
 INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml

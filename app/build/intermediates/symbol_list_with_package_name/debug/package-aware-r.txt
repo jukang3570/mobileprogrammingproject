@@ -1659,6 +1659,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lemon
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2286,6 +2287,9 @@ color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color peach
+color peach1
+color peach2
 color preference_fallback_accent_color
 color primary_dark_material_dark
 color primary_dark_material_light
@@ -3365,6 +3369,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_custom
 drawable car_ui_activity_background
 drawable car_ui_app_styled_view_background
 drawable car_ui_app_styled_view_ripple
@@ -3439,6 +3444,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable community
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3544,10 +3550,13 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable preference_list_divider_material
 drawable round_corner
+drawable search
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable v
+drawable water
+drawable write
 font bareunhippy
 font custom_font_family
 font nanum

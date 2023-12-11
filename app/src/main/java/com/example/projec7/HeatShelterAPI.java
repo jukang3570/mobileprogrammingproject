@@ -36,7 +36,7 @@ import java.util.HashMap;
 public class HeatShelterAPI extends AppCompatActivity {
 
     private TextView resultTextView;
-    String key="여기 숫자";
+    String key="숫자";
     String data;
 
     //파싱한 좌표 데이터를 저장하는 ArrayList 선언

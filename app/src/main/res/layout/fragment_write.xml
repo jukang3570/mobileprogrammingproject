@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/peach"
     tools:context=".WriteFragment">
 
     <LinearLayout
@@ -54,8 +55,10 @@
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:backgroundTint="@color/black"
                 android:layout_marginStart="50dp"
                 android:text="등록"
+                android:fontFamily="@font/nanum"
                 android:onClick="onSubmitButtonClicked"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -69,6 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="제목\n"
+            android:fontFamily="@font/nanum"
             android:textSize="20sp"
             android:gravity="center_vertical"
             android:layout_centerHorizontal="true"
@@ -80,6 +84,7 @@
             android:id="@+id/category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/peach1"
             android:orientation="horizontal">
 
             <Spinner
@@ -105,10 +110,9 @@
         <LinearLayout
             android:id="@+id/PhotoZone"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal">
-        </LinearLayout>
-
+            android:layout_marginTop="5dp"
+            android:layout_height="90dp"
+            android:orientation="horizontal"></LinearLayout>
 
         <ScrollView
             android:id="@+id/scrollView"
@@ -116,6 +120,7 @@
             android:layout_height="270dp"
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="10dp"
+            android:background="@color/white"
             >
 
             <EditText
@@ -124,6 +129,7 @@
                 android:layout_height="match_parent"
                 android:gravity="top"
                 android:hint="  내용을 입력하세요."
+                android:fontFamily="@font/nanum"
                 android:background="@android:color/transparent"
 
                 android:textSize="16dp"

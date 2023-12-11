@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/container"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HeatShelterMapFragment">
 
     <!-- SupportMapFragment를 포함하는 FrameLayout -->
@@ -13,10 +13,28 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:visibility="visible">
 
     </fragment>
+
+
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--        android:id="@+id/bottomNavigationView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:background="?android:attr/windowBackground"-->
+    <!--        app:menu="@menu/bottom_bar" />-->
+
+    <!-- BottomNavigationView -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottombarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_bar" />
 
     <Button
         android:id="@+id/searchButton"
@@ -27,25 +45,11 @@
         android:layout_gravity="right"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/nanum"
         android:onClick="onSearchButtonClick"
-        android:text="검색하기" />
-
-<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--        android:id="@+id/bottomNavigationView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="bottom"-->
-<!--        android:background="?android:attr/windowBackground"-->
-<!--        app:menu="@menu/bottom_bar" />-->
-
-    <!-- BottomNavigationView -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottombarView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_gravity="bottom"
-        app:menu="@menu/bottom_bar"
-        tools:ignore="MissingConstraints" />
+        android:text="검색"
+        app:backgroundTintMode="src_over"
+        app:icon="@drawable/search" />
 
 </FrameLayout>

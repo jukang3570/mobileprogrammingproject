@@ -4,4 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#8A2BE2</color>
     <color name="yellow">#F4FF81 </color>
+    <color name="lemon">#FFDC02 </color>
+    <color name="peach">#FFECD2</color>
+    <color name="peach1">#Fcb69f</color>
+    <color name="peach2">#Ffe4e1</color>
+
 </resources>
