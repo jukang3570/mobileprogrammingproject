@@ -11,8 +11,8 @@ import java.util.List;
 
 public class MapHelper {
 
-    public static double getTemperaturesFromCSV(Context context, String districtName) {
-        List<Integer> temperatures = new ArrayList<>();
+    public static double getTemperaturesFromCSV(Context context, String districtName, String selectedItem) {
+        List<Double> temperatures = new ArrayList<>();
         double sum = 0.0;
         int totalCount = 0;
         try {
@@ -20,18 +20,29 @@ public class MapHelper {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
             String line;
 
-            // CSV 파일 구조가 "지역, 온도"와 같다고 가정합니다.
+            // CSV 파일 구조가 "자치구, 온도"와 같다고 가정합니다.
             while ((line = bufferedReader.readLine()) != null) {
                 String[] parts = line.split(",");
-                if (parts.length == 2 && parts[0].trim().equals(districtName)) {
-                    double temperature = Float.parseFloat(parts[1].trim());
-                    // 반올림하여 가장 가까운 정수로 변환 후 리스트에 추가합니다.
-                    //int roundedTemperature = Math.round(temperature);
-                    //temperatures.add(roundedTemperature);
-
-                    //double temperature = Double.parseDouble(value);
-                    sum += temperature;
-                    totalCount++;
+                if(selectedItem.equals("온도")) {
+                    if (parts[0].trim().equals(districtName)) {
+                        double temperature = Double.parseDouble(parts[1].trim());
+                        sum += temperature;
+                        totalCount++;
+                    }
+                }
+                else if(selectedItem.equals("습도")) {
+                    if (parts[0].trim().equals(districtName)) {
+                        double temperature = Double.parseDouble(parts[2].trim());
+                        sum += temperature;
+                        totalCount++;
+                    }
+                }
+                else if(selectedItem.equals("열섬")) {
+                    if (parts[0].trim().equals(districtName)) {
+                        double temperature = Double.parseDouble(parts[2].trim()) + Double.parseDouble(parts[1].trim());
+                        sum += temperature;
+                        totalCount++;
+                    }
                 }
             }
 
@@ -39,9 +50,9 @@ public class MapHelper {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         double overallAverage = (totalCount > 0) ? sum / totalCount : 0.0;
         return overallAverage;
     }
-
-    // 나머지 메서드들...
 }
+

@@ -16,14 +16,22 @@
         android:layout_width="415dp"
         android:layout_height="580dp"
         android:layout_marginTop="16dp"
-        android:visibility="visible"
-        android:src="@drawable/seoul_districts" />
+        android:src="@drawable/seoul_districts"
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/iv_tmp"
         android:layout_width="415dp"
         android:layout_height="580dp"
         android:layout_marginTop="16dp"
-        android:visibility="gone"
-        android:src="@drawable/seoul_districts" />
+        android:src="@drawable/seoul_districts"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_hotisland"
+        android:layout_width="415dp"
+        android:layout_height="580dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/seoul_districts"
+        android:visibility="invisible" />
 </LinearLayout>
