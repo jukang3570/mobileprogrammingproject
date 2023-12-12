@@ -3,7 +3,8 @@ local
 array local_array
 array theme_array
 color black
-color lemon
+color darkgreen
+color green
 color peach
 color peach1
 color peach2
@@ -25,6 +26,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_shared_umbrella
 drawable ic_watercar
+drawable round_border
 drawable round_corner
 drawable search
 drawable v
@@ -33,6 +35,8 @@ drawable write
 font bareunhippy
 font custom_font_family
 font nanum
+font notobold
+font notoextrabold
 id CameraButton
 id CommentButton
 id CommentText
@@ -98,6 +102,7 @@ string app_name
 string title_activity_HeatShel
 style Base.Theme.Projec7
 style CustomDialog
+style Projec7
 style Theme.Projec7
 style customButtonFontStyle
 style customCheckboxFontStyle

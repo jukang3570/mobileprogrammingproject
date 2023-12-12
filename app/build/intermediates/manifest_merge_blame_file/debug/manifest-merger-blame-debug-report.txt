@@ -60,7 +60,7 @@
 37-->[androidx.core:core:1.9.0] /Users/sola/.gradle/caches/transforms-3/0bb5616a7558933ce9ef66db5210a361/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 38
 39    <application
-39-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:9:5-78:19
+39-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:9:5-76:19
 40        android:allowBackup="true"
 40-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:10:9-35
 41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -141,171 +141,165 @@
 82-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:51:13-53
 83
 84        <!-- 여기 구글맵 api자리 -->
-85        <meta-data
-85-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:54:9-56:71
-86            android:name="com.google.android.geo.API_KEY"
-86-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:55:13-58
-87            android:value="AIzaSyD2G54pN-Vk3irx9EFWznGVjF83PHE-dJg" />
-87-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:56:13-68
-88
-89        <activity
-89-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:58:9-66:20
-90            android:name="com.example.projec7.HeatShelterAPI"
-90-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:59:13-43
-91            android:exported="true" >
-91-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:60:13-36
-92            <intent-filter>
-92-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:25:13-29:29
-93                <action android:name="android.intent.action.MAIN" />
-93-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:26:17-69
-93-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:26:25-66
-94
-95                <category android:name="android.intent.category.LAUNCHER" />
-95-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:28:17-77
-95-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:28:27-74
-96            </intent-filter>
-97        </activity>
-98        <activity
-98-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:68:9-77:20
-99            android:name="com.example.projec7.HeatShelterMapFragment"
-99-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:69:13-51
-100            android:exported="true"
-100-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:70:13-36
-101            android:label="@string/title_activity_HeatShel" >
-101-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:71:13-60
-102            <intent-filter>
-102-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:25:13-29:29
-103                <action android:name="android.intent.action.MAIN" />
-103-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:26:17-69
-103-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:26:25-66
-104
-105                <category android:name="android.intent.category.LAUNCHER" />
-105-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:28:17-77
-105-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:28:27-74
-106            </intent-filter>
-107        </activity>
-108
-109        <provider
-109-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:37:9-42:71
-110            android:name="com.android.car.ui.core.CarUiInstaller"
-110-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:38:13-66
-111            android:authorities="com.example.projec7.CarUiInstaller"
-111-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:39:13-66
-112            android:directBootAware="true"
-112-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:40:13-43
-113            android:exported="false"
-113-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:41:13-37
-114            android:process="@string/car_ui_installer_process_name" />
-114-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:42:13-68
-115        <provider
-115-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:43:9-48:79
-116            android:name="com.android.car.ui.core.SearchResultsProvider"
-116-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:44:13-73
-117            android:authorities="com.example.projec7.SearchResultsProvider"
-117-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:45:13-73
-118            android:exported="true"
-118-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:46:13-36
-119            android:process="@string/car_ui_installer_process_name"
-119-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:47:13-68
-120            android:readPermission="com.android.car.ui.READ_SEARCH_RESULTS" /> <!-- Needs to be explicitly declared on P+ -->
-120-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:48:13-76
-121        <uses-library
-121-->[com.google.android.gms:play-services-maps:18.1.0] /Users/sola/.gradle/caches/transforms-3/b51b7af6035db914b954ed9af8fb3d88/transformed/play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
-122            android:name="org.apache.http.legacy"
-122-->[com.google.android.gms:play-services-maps:18.1.0] /Users/sola/.gradle/caches/transforms-3/b51b7af6035db914b954ed9af8fb3d88/transformed/play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
-123            android:required="false" />
-123-->[com.google.android.gms:play-services-maps:18.1.0] /Users/sola/.gradle/caches/transforms-3/b51b7af6035db914b954ed9af8fb3d88/transformed/play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
-124
-125        <activity
-125-->[com.google.android.gms:play-services-base:18.1.0] /Users/sola/.gradle/caches/transforms-3/d3dc94d86ba6e2ef548a0f6f593e93b6/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
-126            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-126-->[com.google.android.gms:play-services-base:18.1.0] /Users/sola/.gradle/caches/transforms-3/d3dc94d86ba6e2ef548a0f6f593e93b6/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
-127            android:exported="false"
-127-->[com.google.android.gms:play-services-base:18.1.0] /Users/sola/.gradle/caches/transforms-3/d3dc94d86ba6e2ef548a0f6f593e93b6/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
-128            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-128-->[com.google.android.gms:play-services-base:18.1.0] /Users/sola/.gradle/caches/transforms-3/d3dc94d86ba6e2ef548a0f6f593e93b6/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
-129
-130        <meta-data
-130-->[com.google.android.gms:play-services-basement:18.1.0] /Users/sola/.gradle/caches/transforms-3/a80a4c74951bc5d0fdf45d294edd6526/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-131            android:name="com.google.android.gms.version"
-131-->[com.google.android.gms:play-services-basement:18.1.0] /Users/sola/.gradle/caches/transforms-3/a80a4c74951bc5d0fdf45d294edd6526/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-132            android:value="@integer/google_play_services_version" />
-132-->[com.google.android.gms:play-services-basement:18.1.0] /Users/sola/.gradle/caches/transforms-3/a80a4c74951bc5d0fdf45d294edd6526/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-133
-134        <service
-134-->[androidx.room:room-runtime:2.6.0] /Users/sola/.gradle/caches/transforms-3/689f5956a175ebabaa7c347caac585b3/transformed/room-runtime-2.6.0/AndroidManifest.xml:24:9-28:63
-135            android:name="androidx.room.MultiInstanceInvalidationService"
-135-->[androidx.room:room-runtime:2.6.0] /Users/sola/.gradle/caches/transforms-3/689f5956a175ebabaa7c347caac585b3/transformed/room-runtime-2.6.0/AndroidManifest.xml:25:13-74
-136            android:directBootAware="true"
-136-->[androidx.room:room-runtime:2.6.0] /Users/sola/.gradle/caches/transforms-3/689f5956a175ebabaa7c347caac585b3/transformed/room-runtime-2.6.0/AndroidManifest.xml:26:13-43
-137            android:exported="false" />
-137-->[androidx.room:room-runtime:2.6.0] /Users/sola/.gradle/caches/transforms-3/689f5956a175ebabaa7c347caac585b3/transformed/room-runtime-2.6.0/AndroidManifest.xml:27:13-37
-138
-139        <provider
-139-->[androidx.emoji2:emoji2:1.2.0] /Users/sola/.gradle/caches/transforms-3/316a02c860c73ab94686517a17339332/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-140            android:name="androidx.startup.InitializationProvider"
-140-->[androidx.emoji2:emoji2:1.2.0] /Users/sola/.gradle/caches/transforms-3/316a02c860c73ab94686517a17339332/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-141            android:authorities="com.example.projec7.androidx-startup"
-141-->[androidx.emoji2:emoji2:1.2.0] /Users/sola/.gradle/caches/transforms-3/316a02c860c73ab94686517a17339332/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-142            android:exported="false" >
-142-->[androidx.emoji2:emoji2:1.2.0] /Users/sola/.gradle/caches/transforms-3/316a02c860c73ab94686517a17339332/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+85
+86        <activity
+86-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:56:9-64:20
+87            android:name="com.example.projec7.HeatShelterAPI"
+87-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:57:13-43
+88            android:exported="true" >
+88-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:58:13-36
+89            <intent-filter>
+89-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:25:13-29:29
+90                <action android:name="android.intent.action.MAIN" />
+90-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:26:17-69
+90-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:26:25-66
+91
+92                <category android:name="android.intent.category.LAUNCHER" />
+92-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:28:17-77
+92-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:28:27-74
+93            </intent-filter>
+94        </activity>
+95        <activity
+95-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:66:9-75:20
+96            android:name="com.example.projec7.HeatShelterMapFragment"
+96-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:67:13-51
+97            android:exported="true"
+97-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:68:13-36
+98            android:label="@string/title_activity_HeatShel" >
+98-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:69:13-60
+99            <intent-filter>
+99-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:25:13-29:29
+100                <action android:name="android.intent.action.MAIN" />
+100-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:26:17-69
+100-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:26:25-66
+101
+102                <category android:name="android.intent.category.LAUNCHER" />
+102-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:28:17-77
+102-->/Users/sola/Documents/GitHub/mobileprogrammingproject/app/src/main/AndroidManifest.xml:28:27-74
+103            </intent-filter>
+104        </activity>
+105
+106        <provider
+106-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:37:9-42:71
+107            android:name="com.android.car.ui.core.CarUiInstaller"
+107-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:38:13-66
+108            android:authorities="com.example.projec7.CarUiInstaller"
+108-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:39:13-66
+109            android:directBootAware="true"
+109-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:40:13-43
+110            android:exported="false"
+110-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:41:13-37
+111            android:process="@string/car_ui_installer_process_name" />
+111-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:42:13-68
+112        <provider
+112-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:43:9-48:79
+113            android:name="com.android.car.ui.core.SearchResultsProvider"
+113-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:44:13-73
+114            android:authorities="com.example.projec7.SearchResultsProvider"
+114-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:45:13-73
+115            android:exported="true"
+115-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:46:13-36
+116            android:process="@string/car_ui_installer_process_name"
+116-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:47:13-68
+117            android:readPermission="com.android.car.ui.READ_SEARCH_RESULTS" /> <!-- Needs to be explicitly declared on P+ -->
+117-->[com.android.car.ui:car-ui-lib:2.5.1] /Users/sola/.gradle/caches/transforms-3/411d9d11bbc0767fda7bcb34e9a1aad1/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:48:13-76
+118        <uses-library
+118-->[com.google.android.gms:play-services-maps:18.1.0] /Users/sola/.gradle/caches/transforms-3/b51b7af6035db914b954ed9af8fb3d88/transformed/play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+119            android:name="org.apache.http.legacy"
+119-->[com.google.android.gms:play-services-maps:18.1.0] /Users/sola/.gradle/caches/transforms-3/b51b7af6035db914b954ed9af8fb3d88/transformed/play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+120            android:required="false" />
+120-->[com.google.android.gms:play-services-maps:18.1.0] /Users/sola/.gradle/caches/transforms-3/b51b7af6035db914b954ed9af8fb3d88/transformed/play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+121
+122        <activity
+122-->[com.google.android.gms:play-services-base:18.1.0] /Users/sola/.gradle/caches/transforms-3/d3dc94d86ba6e2ef548a0f6f593e93b6/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+123            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+123-->[com.google.android.gms:play-services-base:18.1.0] /Users/sola/.gradle/caches/transforms-3/d3dc94d86ba6e2ef548a0f6f593e93b6/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+124            android:exported="false"
+124-->[com.google.android.gms:play-services-base:18.1.0] /Users/sola/.gradle/caches/transforms-3/d3dc94d86ba6e2ef548a0f6f593e93b6/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+125            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+125-->[com.google.android.gms:play-services-base:18.1.0] /Users/sola/.gradle/caches/transforms-3/d3dc94d86ba6e2ef548a0f6f593e93b6/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+126
+127        <meta-data
+127-->[com.google.android.gms:play-services-basement:18.1.0] /Users/sola/.gradle/caches/transforms-3/a80a4c74951bc5d0fdf45d294edd6526/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+128            android:name="com.google.android.gms.version"
+128-->[com.google.android.gms:play-services-basement:18.1.0] /Users/sola/.gradle/caches/transforms-3/a80a4c74951bc5d0fdf45d294edd6526/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+129            android:value="@integer/google_play_services_version" />
+129-->[com.google.android.gms:play-services-basement:18.1.0] /Users/sola/.gradle/caches/transforms-3/a80a4c74951bc5d0fdf45d294edd6526/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+130
+131        <service
+131-->[androidx.room:room-runtime:2.6.0] /Users/sola/.gradle/caches/transforms-3/689f5956a175ebabaa7c347caac585b3/transformed/room-runtime-2.6.0/AndroidManifest.xml:24:9-28:63
+132            android:name="androidx.room.MultiInstanceInvalidationService"
+132-->[androidx.room:room-runtime:2.6.0] /Users/sola/.gradle/caches/transforms-3/689f5956a175ebabaa7c347caac585b3/transformed/room-runtime-2.6.0/AndroidManifest.xml:25:13-74
+133            android:directBootAware="true"
+133-->[androidx.room:room-runtime:2.6.0] /Users/sola/.gradle/caches/transforms-3/689f5956a175ebabaa7c347caac585b3/transformed/room-runtime-2.6.0/AndroidManifest.xml:26:13-43
+134            android:exported="false" />
+134-->[androidx.room:room-runtime:2.6.0] /Users/sola/.gradle/caches/transforms-3/689f5956a175ebabaa7c347caac585b3/transformed/room-runtime-2.6.0/AndroidManifest.xml:27:13-37
+135
+136        <provider
+136-->[androidx.emoji2:emoji2:1.2.0] /Users/sola/.gradle/caches/transforms-3/316a02c860c73ab94686517a17339332/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+137            android:name="androidx.startup.InitializationProvider"
+137-->[androidx.emoji2:emoji2:1.2.0] /Users/sola/.gradle/caches/transforms-3/316a02c860c73ab94686517a17339332/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+138            android:authorities="com.example.projec7.androidx-startup"
+138-->[androidx.emoji2:emoji2:1.2.0] /Users/sola/.gradle/caches/transforms-3/316a02c860c73ab94686517a17339332/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+139            android:exported="false" >
+139-->[androidx.emoji2:emoji2:1.2.0] /Users/sola/.gradle/caches/transforms-3/316a02c860c73ab94686517a17339332/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+140            <meta-data
+140-->[androidx.emoji2:emoji2:1.2.0] /Users/sola/.gradle/caches/transforms-3/316a02c860c73ab94686517a17339332/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+141                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+141-->[androidx.emoji2:emoji2:1.2.0] /Users/sola/.gradle/caches/transforms-3/316a02c860c73ab94686517a17339332/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+142                android:value="androidx.startup" />
+142-->[androidx.emoji2:emoji2:1.2.0] /Users/sola/.gradle/caches/transforms-3/316a02c860c73ab94686517a17339332/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
 143            <meta-data
-143-->[androidx.emoji2:emoji2:1.2.0] /Users/sola/.gradle/caches/transforms-3/316a02c860c73ab94686517a17339332/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-144                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-144-->[androidx.emoji2:emoji2:1.2.0] /Users/sola/.gradle/caches/transforms-3/316a02c860c73ab94686517a17339332/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+143-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/sola/.gradle/caches/transforms-3/6fd8fd141c3610822f82b2e577128ab5/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+144                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+144-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/sola/.gradle/caches/transforms-3/6fd8fd141c3610822f82b2e577128ab5/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
 145                android:value="androidx.startup" />
-145-->[androidx.emoji2:emoji2:1.2.0] /Users/sola/.gradle/caches/transforms-3/316a02c860c73ab94686517a17339332/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+145-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/sola/.gradle/caches/transforms-3/6fd8fd141c3610822f82b2e577128ab5/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
 146            <meta-data
-146-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/sola/.gradle/caches/transforms-3/6fd8fd141c3610822f82b2e577128ab5/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-147                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-147-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/sola/.gradle/caches/transforms-3/6fd8fd141c3610822f82b2e577128ab5/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+147                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
 148                android:value="androidx.startup" />
-148-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/sola/.gradle/caches/transforms-3/6fd8fd141c3610822f82b2e577128ab5/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
-149            <meta-data
-149-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-150                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-150-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-151                android:value="androidx.startup" />
-151-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-152        </provider>
-153
-154        <receiver
-154-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-155            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-155-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-156            android:directBootAware="false"
-156-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-157            android:enabled="true"
-157-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-158            android:exported="true"
-158-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-159            android:permission="android.permission.DUMP" >
-159-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+148-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+149        </provider>
+150
+151        <receiver
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+152            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+152-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+153            android:directBootAware="false"
+153-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+154            android:enabled="true"
+154-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+155            android:exported="true"
+155-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+156            android:permission="android.permission.DUMP" >
+156-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+157            <intent-filter>
+157-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+158                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+158-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+158-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+159            </intent-filter>
 160            <intent-filter>
-160-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-161                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-161-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-161-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+160-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+161                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+161-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+161-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
 162            </intent-filter>
 163            <intent-filter>
-163-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-164                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-164-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-164-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+163-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+164                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+164-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+164-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
 165            </intent-filter>
 166            <intent-filter>
-166-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-167                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-167-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-167-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+166-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+167                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+167-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+167-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
 168            </intent-filter>
-169            <intent-filter>
-169-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-170                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-170-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-170-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/sola/.gradle/caches/transforms-3/9d457939d26490edb5b5c28002cee5d7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-171            </intent-filter>
-172        </receiver>
-173    </application>
-174
-175</manifest>
+169        </receiver>
+170    </application>
+171
+172</manifest>

@@ -1611,6 +1611,7 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
+color darkgreen
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1657,9 +1658,9 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
-color lemon
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -3549,6 +3550,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable preference_list_divider_material
+drawable round_border
 drawable round_corner
 drawable search
 drawable test_level_drawable
@@ -3560,6 +3562,8 @@ drawable write
 font bareunhippy
 font custom_font_family
 font nanum
+font notobold
+font notoextrabold
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -5146,6 +5150,7 @@ style PreferenceSummaryTextStyle
 style PreferenceThemeOverlay
 style PreferenceThemeOverlay_v14
 style PreferenceThemeOverlay_v14_Material
+style Projec7
 style RtlOverlay_DialogWindowTitle_AppCompat
 style RtlOverlay_Widget_AppCompat_ActionBar_TitleItem
 style RtlOverlay_Widget_AppCompat_DialogTitle_Icon

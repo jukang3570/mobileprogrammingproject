@@ -62,5 +62,9 @@
     {
         "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-mergeDebugResources-40:/layout/fragment_write.xml",
         "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_write.xml"
+    },
+    {
+        "merged": "com.example.projec7.app-mergeDebugResources-40:/layout/fragment_write.xml",
+        "source": "com.example.projec7.app-main-43:/layout/fragment_write.xml"
     }
 ]

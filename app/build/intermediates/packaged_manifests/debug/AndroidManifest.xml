@@ -82,9 +82,6 @@
             android:resource="@drawable/click_color" />
 
         <!-- 여기 구글맵 api자리 -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD2G54pN-Vk3irx9EFWznGVjF83PHE-dJg" />
 
         <activity
             android:name="com.example.projec7.HeatShelterAPI"

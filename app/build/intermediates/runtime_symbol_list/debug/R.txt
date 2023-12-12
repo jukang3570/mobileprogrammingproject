@@ -1610,6 +1610,7 @@ int color common_google_signin_btn_text_light_disabled 0x7f06005a
 int color common_google_signin_btn_text_light_focused 0x7f06005b
 int color common_google_signin_btn_text_light_pressed 0x7f06005c
 int color common_google_signin_btn_tint 0x7f06005d
+int color darkgreen 0x7f06031f
 int color design_bottom_navigation_shadow_color 0x7f06005e
 int color design_box_stroke_color 0x7f06005f
 int color design_dark_default_color_background 0x7f060060
@@ -1656,9 +1657,9 @@ int color error_color_material_dark 0x7f060088
 int color error_color_material_light 0x7f060089
 int color foreground_material_dark 0x7f06008a
 int color foreground_material_light 0x7f06008b
+int color green 0x7f060320
 int color highlighted_text_material_dark 0x7f06008c
 int color highlighted_text_material_light 0x7f06008d
-int color lemon 0x7f06031b
 int color m3_appbar_overlay_color 0x7f06008e
 int color m3_assist_chip_icon_tint_color 0x7f06008f
 int color m3_assist_chip_stroke_color 0x7f060090
@@ -3548,6 +3549,7 @@ int drawable notification_template_icon_low_bg 0x7f080130
 int drawable notification_tile_bg 0x7f080131
 int drawable notify_panel_notification_icon_bg 0x7f080132
 int drawable preference_list_divider_material 0x7f080133
+int drawable round_border 0x7f080142
 int drawable round_corner 0x7f080134
 int drawable search 0x7f08013d
 int drawable test_level_drawable 0x7f080135
@@ -3559,6 +3561,8 @@ int drawable write 0x7f080141
 int font bareunhippy 0x7f090000
 int font custom_font_family 0x7f090001
 int font nanum 0x7f090002
+int font notobold 0x7f090003
+int font notoextrabold 0x7f090004
 int id ALT 0x7f0a0000
 int id BOTTOM_END 0x7f0a0001
 int id BOTTOM_START 0x7f0a0002
@@ -5145,6 +5149,7 @@ int style PreferenceSummaryTextStyle 0x7f140179
 int style PreferenceThemeOverlay 0x7f14017a
 int style PreferenceThemeOverlay_v14 0x7f14017b
 int style PreferenceThemeOverlay_v14_Material 0x7f14017c
+int style Projec7 0x7f1404de
 int style RtlOverlay_DialogWindowTitle_AppCompat 0x7f14017d
 int style RtlOverlay_Widget_AppCompat_ActionBar_TitleItem 0x7f14017e
 int style RtlOverlay_Widget_AppCompat_DialogTitle_Icon 0x7f14017f

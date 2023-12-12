@@ -9,6 +9,11 @@
         android:fontWeight="400"
         tools:targetAPI="o"/>
     <!--bold-->
+    <font
+        android:font="@font/notobold"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        tools:targetAPI="o"/>
 
 
 </font-family>

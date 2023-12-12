@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="http://schemas.android.com/tools">
     <string-array name="local_array">
         <item>구 선택</item>
         <item>강남구</item>
@@ -38,13 +38,14 @@
 
     </string-array>
     <color name="black">#FF000000</color>
-    <color name="lemon">#FFDC02 </color>
+    <color name="darkgreen">#36A05c</color>
+    <color name="green">#92B431</color>
     <color name="peach">#FFECD2</color>
     <color name="peach1">#Fcb69f</color>
     <color name="peach2">#Ffe4e1</color>
     <color name="purple">#8A2BE2</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="yellow">#F4FF81 </color>
+    <color name="yellow">#f5b912</color>
     <string name="SEOUL_SHELTER_API_KEY">MY_API_KEY</string>
     <string name="app_name">projec7</string>
     <string name="title_activity_HeatShel">HeatShel</string>
@@ -56,26 +57,34 @@
         <item name="android:editTextStyle">@style/customEditTextFontStyle</item>
         <item name="android:radioButtonStyle">@style/customRadioButtonFontStyle</item>
         <item name="android:checkboxStyle">@style/customCheckboxFontStyle</item>
+
+        // 상태 바 변경
+        <item name="android:statusBarColor" ns1:targetApi="l">#000000</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
     <style name="CustomDialog" parent="Theme.AppCompat.Dialog">
         <item name="android:windowMinWidthMajor">90%</item>
         <item name="android:windowMinWidthMinor">90%</item>
     </style>
+    <style name="Projec7" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/darkgreen</item>
+    </style>
     <style name="Theme.Projec7" parent="Base.Theme.Projec7"/>
     <style name="customButtonFontStyle" parent="@android:style/Widget.DeviceDefault.Button.Borderless">
-        <item name="android:fontFamily">@font/nanum</item>
+        <item name="android:fontFamily">@font/notobold</item>
     </style>
     <style name="customCheckboxFontStyle" parent="@android:style/Widget.DeviceDefault.CompoundButton.CheckBox">
-        <item name="android:fontFamily">@font/nanum</item>
+        <item name="android:fontFamily">@font/notobold</item>
     </style>
     <style name="customEditTextFontStyle" parent="@android:style/Widget.DeviceDefault.EditText">
-        <item name="android:fontFamily">@font/nanum</item>
+        <item name="android:fontFamily">@font/notobold</item>
         <item name="android:textColor">@color/black</item>
     </style>
     <style name="customRadioButtonFontStyle" parent="@android:style/Widget.DeviceDefault.CompoundButton.RadioButton">
-        <item name="android:fontFamily">@font/nanum</item>
+        <item name="android:fontFamily">@font/notobold</item>
     </style>
     <style name="customTextViewFontStyle" parent="@android:style/Widget.DeviceDefault.TextView">
-        <item name="android:fontFamily">@font/nanum</item>
+        <item name="android:fontFamily">@font/notobold</item>
     </style>
 </resources>

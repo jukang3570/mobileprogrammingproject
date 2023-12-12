@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/community_screen"
     android:layout_width="match_parent"
-    android:background="@color/peach"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".CommunityScreenFragment">
 
@@ -28,9 +28,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/peach1"
+            android:background="@color/darkgreen"
             >
-
             <Spinner
                 android:id="@+id/local_category"
                 android:layout_width="wrap_content"
@@ -47,15 +46,15 @@
         </LinearLayout>
 
         <!-- RecyclerView -->
+
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="390dp"
+            android:layout_height="408dp"
             android:layout_margin="10dp"
-            android:background="@color/peach"
+            android:background="@drawable/round_border"
             tools:listitem="@layout/post_item" />
-
-
 
         <ImageButton
             android:id="@+id/WriteButton"
@@ -65,6 +64,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:src="@android:drawable/btn_star" />
+
     </LinearLayout>
 
 </FrameLayout>
