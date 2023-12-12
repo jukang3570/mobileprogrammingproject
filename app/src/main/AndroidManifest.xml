@@ -51,7 +51,7 @@
             android:resource="@drawable/click_color" />
 
         <!-- 여기 구글맵 api자리 -->
-
+        
 
         <activity
             android:name=".HeatShelterAPI"

@@ -4,10 +4,6 @@
         "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/img.png"
     },
     {
-        "merged": "com.example.projec7.app-merged_res-41:/layout_fragment_heat_shelter_map.xml.flat",
-        "source": "com.example.projec7.app-main-43:/layout/fragment_heat_shelter_map.xml"
-    },
-    {
         "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_ic_community.xml.flat",
         "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/ic_community.xml"
     },
@@ -70,10 +66,6 @@
     {
         "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_fragment_post_detail.xml.flat",
         "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_post_detail.xml"
-    },
-    {
-        "merged": "com.example.projec7.app-merged_res-41:/layout_fragment_write.xml.flat",
-        "source": "com.example.projec7.app-main-43:/layout/fragment_write.xml"
     },
     {
         "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/mipmap-mdpi_ic_launcher.webp.flat",
@@ -176,12 +168,12 @@
         "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/comment_item.xml"
     },
     {
-        "merged": "com.example.projec7.app-merged_res-41:/layout_fragment_community.xml.flat",
-        "source": "com.example.projec7.app-main-43:/layout/fragment_community.xml"
-    },
-    {
         "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_fragment_community.xml.flat",
         "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/layout/fragment_community.xml"
+    },
+    {
+        "merged": "com.example.projec7.app-merged_res-41:/layout_fragment_community_screen.xml.flat",
+        "source": "com.example.projec7.app-main-43:/layout/fragment_community_screen.xml"
     },
     {
         "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/xml_backup_rules.xml.flat",
@@ -214,10 +206,6 @@
     {
         "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/drawable_click_color.xml.flat",
         "source": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-main-43:/drawable/click_color.xml"
-    },
-    {
-        "merged": "com.example.projec7.app-merged_res-41:/drawable_water.png.flat",
-        "source": "com.example.projec7.app-main-43:/drawable/water.png"
     },
     {
         "merged": "/Users/sola/.gradle/daemon/8.0/com.example.projec7.app-merged_res-41:/layout_fragment_shared__umbrella.xml.flat",
